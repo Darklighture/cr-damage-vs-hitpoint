@@ -72,7 +72,7 @@
         "comment_zh": "三连发"
       }
     ],
-    "value": 48,
+    "value": 144,
     "type": "damage"
   },
   {
@@ -396,7 +396,7 @@
         "img": "golem.png",
         "comment_en": "golemite",
         "name_zh": "戈仑石人",
-        "comment_zh": "小石人伤害"
+        "comment_zh": "小石人"
       }
     ],
     "value": 84,
@@ -494,7 +494,7 @@
     "ref_cards": [
       {
         "img": "golem.png",
-        "comment_en": "death (golemite)",
+        "comment_en": "golemite (death)",
         "name_zh": "戈仑石人",
         "comment_zh": "小石人亡语"
       }
@@ -520,7 +520,7 @@
         "img": "royal-ghost-ev.png",
         "comment_en": "souldier",
         "name_zh": "进化幽灵",
-        "comment_zh": "阴兵攻击"
+        "comment_zh": "阴兵"
       }
     ],
     "value": 102,
@@ -840,7 +840,9 @@
     "ref_cards": [
       {
         "img": "skeleton-barrel.png",
-        "name_zh": "骷髅气球"
+        "comment_en": "death",
+        "name_zh": "骷髅气球",
+        "comment_zh": "亡语"
       }
     ],
     "value": 145,
