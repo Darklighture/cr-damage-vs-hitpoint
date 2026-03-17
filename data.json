@@ -2249,7 +2249,7 @@
         "img": "firecracker-ev.png",
         "comment_en": "spark",
         "name_zh": "进化烟花",
-        "comment_zh": "大小火花"
+        "comment_zh": "火花每击"
       }
     ],
     "value": 48,
@@ -2445,7 +2445,7 @@
     "ref_cards": [
       {
         "img": "executioner.png",
-        "comment_en": "2 hit,
+        "comment_en": "2 hit",
         "name_zh": "飞斧屠夫",
         "comment_zh": "来回2击"
       }
