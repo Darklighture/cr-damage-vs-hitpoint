@@ -1,4101 +1,1706 @@
 [
   {
-    "name": "goblin_curse_per_hit",
-    "ref_cards": [
-      {
-        "img": "goblin-curse.png",
-        "comment_en": "per hit",
-        "name_zh": "哥布林诅咒",
-        "comment_zh": "每击"
-      }
-    ],
-    "value": 35,
-    "type": "damage"
-  },
-  {
     "name": "ice_golem_hero_blizzard",
-    "ref_cards": [
-      {
-        "img": "ice-golem-hero.png",
-        "comment_en": "blizzard",
-        "name_zh": "英雄冰人",
-        "comment_zh": "暴风雪"
-      }
-    ],
-    "value": 40,
-    "type": "damage"
+    "display_name": "英雄冰人",
+    "hp": 1315,
+    "damage": 120,
+    "img": "ice-golem-hero.png",
+    "comment": "暴风雪总伤40*3"
   },
   {
-    "name": "x_bow_main",
-    "ref_cards": [
-      {
-        "img": "x-bow.png",
-        "name_zh": "X连弩"
-      }
-    ],
-    "value": 43,
-    "type": "damage"
+    "name": "x_bow",
+    "display_name": "X连弩",
+    "hp": 1600,
+    "damage": 43,
+    "img": "x-bow.png",
+    "comment": ""
   },
   {
     "name": "wizard_hero_tornado",
-    "ref_cards": [
-      {
-        "img": "wizard-hero.png",
-        "comment_en": "tornado",
-        "name_zh": "英雄火法",
-        "comment_zh": "飓风"
-      }
-    ],
-    "value": 43,
-    "type": "damage"
+    "display_name": "英雄火法",
+    "hp": 755,
+    "damage": 43,
+    "img": "wizard-hero.png",
+    "comment": "飓风每击"
   },
   {
-    "name": "inferno_tower_main",
-    "ref_cards": [
-      {
-        "img": "inferno-tower.png",
-        "comment_en": "min per hit",
-        "name_zh": "地狱之塔",
-        "comment_zh": "最小每击"
-      }
-    ],
-    "value": 43,
-    "type": "damage"
+    "name": "inferno_tower_min_per_hit",
+    "display_name": "地狱之塔",
+    "hp": 1748,
+    "damage": 43,
+    "img": "inferno-tower.png",
+    "comment": "最小每击"
   },
   {
     "name": "magic_archer_hero_triple_shot",
-    "ref_cards": [
-      {
-        "img": "magic-archer-hero.png",
-        "comment_en": "triple_shot",
-        "name_zh": "英雄游侠",
-        "comment_zh": "三连发"
-      }
-    ],
-    "value": 144,
-    "type": "damage"
+    "display_name": "英雄游侠",
+    "hp": 529,
+    "damage": 144,
+    "img": "magic-archer-hero.png",
+    "comment": "三连发48*3"
   },
   {
-    "name": "lava_hound_main",
-    "ref_cards": [
-      {
-        "img": "lava-hound.png",
-        "name_zh": "熔岩猎犬"
-      }
-    ],
-    "value": 53,
-    "type": "damage"
+    "name": "lava_hound",
+    "display_name": "熔岩猎犬",
+    "hp": 3581,
+    "damage": 53,
+    "img": "lava-hound.png",
+    "comment": ""
   },
   {
     "name": "elixir_golem_small",
-    "ref_cards": [
-      {
-        "img": "elixir-golem.png",
-        "comment_en": "blob",
-        "name_zh": "圣水戈仑",
-        "comment_zh": "小泡泡"
-      }
-    ],
-    "value": 64,
-    "type": "damage"
+    "display_name": "圣水戈仑",
+    "hp": 360,
+    "damage": 64,
+    "img": "elixir-golem.png",
+    "comment": "小泡泡"
   },
   {
     "name": "electro_dragon_ev_addition",
-    "ref_cards": [
-      {
-        "img": "electro-dragon-ev.png",
-        "comment_en": "extra chain",
-        "name_zh": "进化电龙",
-        "comment_zh": "闪电链"
-      }
-    ],
-    "value": 64,
-    "type": "damage"
+    "display_name": "进化电龙",
+    "hp": 998,
+    "damage": 64,
+    "img": "electro-dragon-ev.png",
+    "comment": "闪电链"
   },
   {
-    "name": "royal_hogs_main",
-    "ref_cards": [
-      {
-        "img": "royal-hogs.png",
-        "name_zh": "皇家野猪"
-      }
-    ],
-    "value": 74,
-    "type": "damage"
+    "name": "royal_hogs",
+    "display_name": "皇家野猪",
+    "hp": 837,
+    "damage": 74,
+    "img": "royal-hogs.png",
+    "comment": ""
   },
   {
     "name": "void_many_one",
-    "ref_cards": [
-      {
-        "img": "void.png",
-        "comment_en": "1 hit (5+ target)",
-        "name_zh": "虚空法术",
-        "comment_zh": "1击（5个以上）"
-      }
-    ],
-    "value": 76,
-    "type": "damage"
+    "display_name": "虚空法术",
+    "hp": 0,
+    "damage": 76,
+    "img": "void.png",
+    "comment": "1击（5个以上）"
   },
   {
-    "name": "skeletons_main",
-    "ref_cards": [
-      {
-        "img": "skeletons.png",
-        "name_zh": "骷髅兵"
-      }
-    ],
-    "value": 81,
-    "type": "hp"
+    "name": "skeletons",
+    "display_name": "骷髅兵",
+    "hp": 81,
+    "damage": 81,
+    "img": "skeletons.png",
+    "comment": ""
   },
   {
-    "name": "bats_main",
-    "ref_cards": [
-      {
-        "img": "bats.png",
-        "name_zh": "蝙蝠"
-      }
-    ],
-    "value": 81,
-    "type": "hp"
+    "name": "bats",
+    "display_name": "蝙蝠",
+    "hp": 81,
+    "damage": 81,
+    "img": "bats.png",
+    "comment": ""
   },
   {
-    "name": "guards_main",
-    "ref_cards": [
-      {
-        "img": "guards.png",
-        "name_zh": "骷髅守卫"
-      }
-    ],
-    "value": 81,
-    "type": "hp"
+    "name": "guards",
+    "display_name": "骷髅守卫",
+    "hp": 81,
+    "damage": 117,
+    "img": "guards.png",
+    "comment": ""
   },
   {
     "name": "skeleton_army_ev_shogun_shield",
-    "ref_cards": [
-      {
-        "img": "skeleton-army-ev.png",
-        "comment_en": "general's shield",
-        "name_zh": "进化骷髅海",
-        "comment_zh": "将军护盾"
-      }
-    ],
-    "value": 81,
-    "type": "hp"
-  },
-  {
-    "name": "skeleton_army_ev_shogun",
-    "ref_cards": [
-      {
-        "img": "skeleton-army-ev.png",
-        "comment_en": "general",
-        "name_zh": "进化骷髅海",
-        "comment_zh": "将军"
-      }
-    ],
-    "value": 81,
-    "type": "damage"
-  },
-  {
-    "name": "skeleton_army_ev_shogun",
-    "ref_cards": [
-      {
-        "img": "skeleton-army-ev.png",
-        "comment_en": "general",
-        "name_zh": "进化骷髅海",
-        "comment_zh": "将军"
-      }
-    ],
-    "value": 81,
-    "type": "hp"
+    "display_name": "进化骷髅海",
+    "hp": 81,
+    "damage": 0,
+    "img": "skeleton-army-ev.png",
+    "comment": "将军护盾"
   },
   {
     "name": "goblin_barrel_ev_decoy",
-    "ref_cards": [
-      {
-        "img": "goblin-barrel-ev.png",
-        "comment_en": "decoy",
-        "name_zh": "进化飞桶",
-        "comment_zh": "诱饵"
-      }
-    ],
-    "value": 81,
-    "type": "hp"
+    "display_name": "进化飞桶",
+    "hp": 81,
+    "damage": 89,
+    "img": "goblin-barrel-ev.png",
+    "comment": "诱饵"
   },
   {
     "name": "royal_ghost_ev_servant",
-    "ref_cards": [
-      {
-        "img": "royal-ghost-ev.png",
-        "comment_en": "souldier",
-        "name_zh": "进化幽灵",
-        "comment_zh": "阴兵"
-      }
-    ],
-    "value": 81,
-    "type": "hp"
+    "display_name": "进化幽灵",
+    "hp": 81,
+    "damage": 102,
+    "img": "royal-ghost-ev.png",
+    "comment": "阴兵"
   },
   {
-    "name": "skeletons_main",
-    "ref_cards": [
-      {
-        "img": "skeletons.png",
-        "name_zh": "骷髅兵"
-      }
-    ],
-    "value": 81,
-    "type": "damage"
-  },
-  {
-    "name": "spear_goblins_main",
-    "ref_cards": [
-      {
-        "img": "spear-goblins.png",
-        "name_zh": "哥布林投矛手"
-      }
-    ],
-    "value": 81,
-    "type": "damage"
-  },
-  {
-    "name": "bats_main",
-    "ref_cards": [
-      {
-        "img": "bats.png",
-        "name_zh": "蝙蝠"
-      }
-    ],
-    "value": 81,
-    "type": "damage"
-  },
-  {
-    "name": "earthquake_one",
-    "ref_cards": [
-      {
-        "img": "earthquake.png",
-        "comment_en": "per hit",
-        "name_zh": "地震法术",
-        "comment_zh": "每击"
-      }
-    ],
-    "value": 81,
-    "type": "damage"
+    "name": "spear_goblins",
+    "display_name": "哥布林投矛手",
+    "hp": 133,
+    "damage": 81,
+    "img": "spear-goblins.png",
+    "comment": ""
   },
   {
     "name": "lava_hound_puppy",
-    "ref_cards": [
-      {
-        "img": "lava-hound.png",
-        "comment_en": "pups",
-        "name_zh": "熔岩猎犬",
-        "comment_zh": "小狗"
-      }
-    ],
-    "value": 81,
-    "type": "damage"
+    "display_name": "熔岩猎犬",
+    "hp": 215,
+    "damage": 81,
+    "img": "lava-hound.png",
+    "comment": "小狗"
   },
   {
-    "name": "bats_ev_main",
-    "ref_cards": [
-      {
-        "img": "bats-ev.png",
-        "name_zh": "进化蝙蝠"
-      }
-    ],
-    "value": 81,
-    "type": "damage"
+    "name": "bats_ev",
+    "display_name": "进化蝙蝠",
+    "hp": 122,
+    "damage": 81,
+    "img": "bats-ev.png",
+    "comment": ""
   },
   {
     "name": "royal_giant_ev_recoil",
-    "ref_cards": [
-      {
-        "img": "royal-giant-ev.png",
-        "comment_en": "recoil",
-        "name_zh": "进化家驹",
-        "comment_zh": "震荡波"
-      }
-    ],
-    "value": 81,
-    "type": "damage"
+    "display_name": "进化家驹",
+    "hp": 3164,
+    "damage": 81,
+    "img": "royal-giant-ev.png",
+    "comment": "震荡波"
   },
   {
-    "name": "suspicious_bush_main",
-    "ref_cards": [
-      {
-        "img": "suspicious-bush.png",
-        "name_zh": "可疑草丛"
-      }
-    ],
-    "value": 81,
-    "type": "hp"
+    "name": "suspicious_bush",
+    "display_name": "可疑草丛",
+    "hp": 81,
+    "damage": 0,
+    "img": "suspicious-bush.png",
+    "comment": ""
   },
   {
-    "name": "ice_golem_main",
-    "ref_cards": [
-      {
-        "img": "ice-golem.png",
-        "name_zh": "戈仑冰人"
-      }
-    ],
-    "value": 84,
-    "type": "damage"
+    "name": "ice_golem",
+    "display_name": "戈仑冰人",
+    "hp": 1315,
+    "damage": 84,
+    "img": "ice-golem.png",
+    "comment": ""
   },
   {
     "name": "ice_golem_death",
-    "ref_cards": [
-      {
-        "img": "ice-golem.png",
-        "comment_en": "death",
-        "name_zh": "戈仑冰人",
-        "comment_zh": "亡语"
-      }
-    ],
-    "value": 84,
-    "type": "damage"
+    "display_name": "戈仑冰人",
+    "hp": 1315,
+    "damage": 84,
+    "img": "ice-golem.png",
+    "comment": "亡语"
   },
   {
     "name": "ice_wizard_appear",
-    "ref_cards": [
-      {
-        "img": "ice-wizard.png",
-        "comment_en": "spawn",
-        "name_zh": "寒冰法师",
-        "comment_zh": "登场"
-      }
-    ],
-    "value": 84,
-    "type": "damage"
+    "display_name": "寒冰法师",
+    "hp": 688,
+    "damage": 84,
+    "img": "ice-wizard.png",
+    "comment": "登场"
   },
   {
-    "name": "tornado_main",
-    "ref_cards": [
-      {
-        "img": "tornado.png",
-        "name_zh": "飓风法术"
-      }
-    ],
-    "value": 84,
-    "type": "damage"
+    "name": "tornado",
+    "display_name": "飓风法术",
+    "hp": 0,
+    "damage": 84,
+    "img": "tornado.png",
+    "comment": ""
   },
   {
     "name": "goblin_drill_appear",
-    "ref_cards": [
-      {
-        "img": "goblin-drill.png",
-        "comment_en": "spawn",
-        "name_zh": "哥布林钻机",
-        "comment_zh": "登场"
-      }
-    ],
-    "value": 84,
-    "type": "damage"
+    "display_name": "哥布林钻机",
+    "hp": 1313,
+    "damage": 84,
+    "img": "goblin-drill.png",
+    "comment": "登场"
   },
   {
     "name": "golem_mini",
-    "ref_cards": [
-      {
-        "img": "golem.png",
-        "comment_en": "golemite",
-        "name_zh": "戈仑石人",
-        "comment_zh": "小石人"
-      }
-    ],
-    "value": 84,
-    "type": "damage"
+    "display_name": "戈仑石人",
+    "hp": 1039,
+    "damage": 84,
+    "img": "golem.png",
+    "comment": "小石人"
   },
   {
     "name": "valkyrie_ev_tornado",
-    "ref_cards": [
-      {
-        "img": "valkyrie-ev.png",
-        "comment_en": "tornado",
-        "name_zh": "进化武神",
-        "comment_zh": "飓风"
-      }
-    ],
-    "value": 84,
-    "type": "damage"
+    "display_name": "进化武神",
+    "hp": 1907,
+    "damage": 84,
+    "img": "valkyrie-ev.png",
+    "comment": "飓风"
   },
   {
     "name": "royal_hogs_ev_landing",
-    "ref_cards": [
-      {
-        "img": "royal-hogs-ev.png",
-        "comment_en": "landing",
-        "name_zh": "进化皇猪",
-        "comment_zh": "落地伤害"
-      }
-    ],
-    "value": 84,
-    "type": "damage"
+    "display_name": "进化皇猪",
+    "hp": 837,
+    "damage": 84,
+    "img": "royal-hogs-ev.png",
+    "comment": "落地伤害"
   },
   {
-    "name": "ice_wizard_main",
-    "ref_cards": [
-      {
-        "img": "ice-wizard.png",
-        "name_zh": "寒冰法师"
-      }
-    ],
-    "value": 89,
-    "type": "damage"
-  },
-  {
-    "name": "goblin_barrel_ev_decoy",
-    "ref_cards": [
-      {
-        "img": "goblin-barrel-ev.png",
-        "comment_en": "decoy",
-        "name_zh": "进化飞桶",
-        "comment_zh": "诱饵"
-      }
-    ],
-    "value": 89,
-    "type": "damage"
-  },
-  {
-    "name": "poison_per_second",
-    "ref_cards": [
-      {
-        "img": "poison.png",
-        "comment_en": "per hit",
-        "name_zh": "毒药法术",
-        "comment_zh": "每击"
-      }
-    ],
-    "value": 92,
-    "type": "damage"
+    "name": "ice_wizard",
+    "display_name": "寒冰法师",
+    "hp": 688,
+    "damage": 89,
+    "img": "ice-wizard.png",
+    "comment": ""
   },
   {
     "name": "goblinstein_doctor",
-    "ref_cards": [
-      {
-        "img": "goblinstein.png",
-        "comment_en": "doctor",
-        "name_zh": "哥布林斯坦",
-        "comment_zh": "博士"
-      }
-    ],
-    "value": 92,
-    "type": "damage"
+    "display_name": "哥布林斯坦",
+    "hp": 721,
+    "damage": 92,
+    "img": "goblinstein.png",
+    "comment": "博士"
   },
   {
-    "name": "electro_spirit_main",
-    "ref_cards": [
-      {
-        "img": "electro-spirit.png",
-        "name_zh": "雷电精灵"
-      }
-    ],
-    "value": 99,
-    "type": "damage"
+    "name": "electro_spirit",
+    "display_name": "雷电精灵",
+    "hp": 230,
+    "damage": 99,
+    "img": "electro-spirit.png",
+    "comment": ""
   },
   {
     "name": "golem_mini_death",
-    "ref_cards": [
-      {
-        "img": "golem.png",
-        "comment_en": "golemite (death)",
-        "name_zh": "戈仑石人",
-        "comment_zh": "小石人亡语"
-      }
-    ],
-    "value": 99,
-    "type": "damage"
+    "display_name": "戈仑石人",
+    "hp": 1039,
+    "damage": 99,
+    "img": "golem.png",
+    "comment": "小石人亡语"
   },
   {
-    "name": "berserker_main",
-    "ref_cards": [
-      {
-        "img": "berserker.png",
-        "name_zh": "狂战士"
-      }
-    ],
-    "value": 102,
-    "type": "damage"
+    "name": "berserker",
+    "display_name": "狂战士",
+    "hp": 896,
+    "damage": 102,
+    "img": "berserker.png",
+    "comment": ""
   },
   {
-    "name": "royal_ghost_ev_servant",
-    "ref_cards": [
-      {
-        "img": "royal-ghost-ev.png",
-        "comment_en": "souldier",
-        "name_zh": "进化幽灵",
-        "comment_zh": "阴兵"
-      }
-    ],
-    "value": 102,
-    "type": "damage"
-  },
-  {
-    "name": "little_prince_main",
-    "ref_cards": [
-      {
-        "img": "little-prince.png",
-        "name_zh": "小王子"
-      }
-    ],
-    "value": 104,
-    "type": "damage"
+    "name": "little_prince",
+    "display_name": "小王子",
+    "hp": 698,
+    "damage": 104,
+    "img": "little-prince.png",
+    "comment": ""
   },
   {
     "name": "ram_rider_rope",
-    "ref_cards": [
-      {
-        "img": "ram-rider.png",
-        "comment_en": "rider's rope",
-        "name_zh": "蛮羊骑士",
-        "comment_zh": "套索"
-      }
-    ],
-    "value": 104,
-    "type": "damage"
+    "display_name": "蛮羊骑士",
+    "hp": 1697,
+    "damage": 104,
+    "img": "ram-rider.png",
+    "comment": "套索"
   },
   {
-    "name": "minions_main",
-    "ref_cards": [
-      {
-        "img": "minions.png",
-        "name_zh": "亡灵"
-      }
-    ],
-    "value": 107,
-    "type": "damage"
+    "name": "minions",
+    "display_name": "亡灵",
+    "hp": 230,
+    "damage": 107,
+    "img": "minions.png",
+    "comment": ""
   },
   {
-    "name": "dagger_duchess_main",
-    "ref_cards": [
-      {
-        "img": "dagger-duchess.png",
-        "name_zh": "飞刀女爵"
-      }
-    ],
-    "value": 107,
-    "type": "damage"
+    "name": "dagger_duchess",
+    "display_name": "飞刀女爵",
+    "hp": 2768,
+    "damage": 107,
+    "img": "dagger-duchess.png",
+    "comment": ""
   },
   {
-    "name": "tower_princess_main",
-    "ref_cards": [
-      {
-        "img": "tower-princess.png",
-        "name_zh": "公主塔"
-      }
-    ],
-    "value": 109,
-    "type": "damage"
+    "name": "tower_princess",
+    "display_name": "公主塔",
+    "hp": 3052,
+    "damage": 109,
+    "img": "tower-princess.png",
+    "comment": ""
   },
   {
-    "name": "royal_chef_main",
-    "ref_cards": [
-      {
-        "img": "royal-chef.png",
-        "name_zh": "皇家大厨"
-      }
-    ],
-    "value": 109,
-    "type": "damage"
+    "name": "royal_chef",
+    "display_name": "皇家大厨",
+    "hp": 2703,
+    "damage": 109,
+    "img": "royal-chef.png",
+    "comment": ""
   },
   {
-    "name": "ice_spirit_main",
-    "ref_cards": [
-      {
-        "img": "ice-spirit.png",
-        "name_zh": "冰雪精灵"
-      }
-    ],
-    "value": 110,
-    "type": "damage"
+    "name": "ice_spirit",
+    "display_name": "冰雪精灵",
+    "hp": 230,
+    "damage": 110,
+    "img": "ice-spirit.png",
+    "comment": ""
   },
   {
-    "name": "heal_spirit_main",
-    "ref_cards": [
-      {
-        "img": "heal-spirit.png",
-        "name_zh": "治疗精灵"
-      }
-    ],
-    "value": 110,
-    "type": "damage"
-  },
-  {
-    "name": "ice_spirit_ev_main",
-    "ref_cards": [
-      {
-        "img": "ice-spirit-ev.png",
-        "name_zh": "进化冰豆"
-      }
-    ],
-    "value": 110,
-    "type": "damage"
+    "name": "heal_spirit",
+    "display_name": "治疗精灵",
+    "hp": 230,
+    "damage": 110,
+    "img": "heal-spirit.png",
+    "comment": ""
   },
   {
     "name": "ice_spirit_ev_addition",
-    "ref_cards": [
-      {
-        "img": "ice-spirit-ev.png",
-        "comment_en": "ice blast",
-        "name_zh": "进化冰豆",
-        "comment_zh": "冰爆"
-      }
-    ],
-    "value": 110,
-    "type": "damage"
+    "display_name": "进化冰豆",
+    "hp": 230,
+    "damage": 110,
+    "img": "ice-spirit-ev.png",
+    "comment": "冰爆"
   },
   {
-    "name": "archers_main",
-    "ref_cards": [
-      {
-        "img": "archers.png",
-        "name_zh": "弓箭手"
-      }
-    ],
-    "value": 112,
-    "type": "damage"
+    "name": "archers",
+    "display_name": "弓箭手",
+    "hp": 304,
+    "damage": 112,
+    "img": "archers.png",
+    "comment": ""
   },
   {
-    "name": "guards_main",
-    "ref_cards": [
-      {
-        "img": "guards.png",
-        "name_zh": "骷髅守卫"
-      }
-    ],
-    "value": 117,
-    "type": "damage"
+    "name": "zappies",
+    "display_name": "电击车小队",
+    "hp": 529,
+    "damage": 117,
+    "img": "zappies.png",
+    "comment": ""
   },
   {
-    "name": "zappies_main",
-    "ref_cards": [
-      {
-        "img": "zappies.png",
-        "name_zh": "电击车小队"
-      }
-    ],
-    "value": 117,
-    "type": "damage"
+    "name": "goblins",
+    "display_name": "哥布林",
+    "hp": 202,
+    "damage": 120,
+    "img": "goblins.png",
+    "comment": ""
   },
   {
-    "name": "goblins_main",
-    "ref_cards": [
-      {
-        "img": "goblins.png",
-        "name_zh": "哥布林"
-      }
-    ],
-    "value": 120,
-    "type": "damage"
-  },
-  {
-    "name": "rune_giant_main",
-    "ref_cards": [
-      {
-        "img": "rune-giant.png",
-        "name_zh": "符文巨人"
-      }
-    ],
-    "value": 120,
-    "type": "damage"
-  },
-  {
-    "name": "bats_ev_main",
-    "ref_cards": [
-      {
-        "img": "bats-ev.png",
-        "name_zh": "进化蝙蝠"
-      }
-    ],
-    "value": 122,
-    "type": "hp"
-  },
-  {
-    "name": "arrows_one",
-    "ref_cards": [
-      {
-        "img": "arrows.png",
-        "comment_en": "per hit",
-        "name_zh": "万箭齐发",
-        "comment_zh": "每击"
-      }
-    ],
-    "value": 122,
-    "type": "damage"
+    "name": "rune_giant",
+    "display_name": "符文巨人",
+    "hp": 2662,
+    "damage": 120,
+    "img": "rune-giant.png",
+    "comment": ""
   },
   {
     "name": "rascals_girl",
-    "ref_cards": [
-      {
-        "img": "rascals.png",
-        "comment_en": "girl",
-        "name_zh": "绿林团伙",
-        "comment_zh": "小妹"
-      }
-    ],
-    "value": 125,
-    "type": "damage"
+    "display_name": "绿林团伙",
+    "hp": 261,
+    "damage": 125,
+    "img": "rascals.png",
+    "comment": "小妹"
   },
   {
     "name": "elixir_golem_middle",
-    "ref_cards": [
-      {
-        "img": "elixir-golem.png",
-        "comment_en": "golemite",
-        "name_zh": "圣水戈仑",
-        "comment_zh": "中泡泡"
-      }
-    ],
-    "value": 128,
-    "type": "damage"
+    "display_name": "圣水戈仑",
+    "hp": 762,
+    "damage": 128,
+    "img": "elixir-golem.png",
+    "comment": "中泡泡"
   },
   {
     "name": "goblinstein_monster",
-    "ref_cards": [
-      {
-        "img": "goblinstein.png",
-        "comment_en": "monster",
-        "name_zh": "哥布林斯坦",
-        "comment_zh": "怪物"
-      }
-    ],
-    "value": 128,
-    "type": "damage"
+    "display_name": "哥布林斯坦",
+    "hp": 2385,
+    "damage": 128,
+    "img": "goblinstein.png",
+    "comment": "怪物"
   },
   {
-    "name": "spear_goblins_main",
-    "ref_cards": [
-      {
-        "img": "spear-goblins.png",
-        "name_zh": "哥布林投矛手"
-      }
-    ],
-    "value": 133,
-    "type": "hp"
+    "name": "mother_witch",
+    "display_name": "女巫婆婆",
+    "hp": 529,
+    "damage": 133,
+    "img": "mother-witch.png",
+    "comment": ""
   },
   {
-    "name": "mother_witch_main",
-    "ref_cards": [
-      {
-        "img": "mother-witch.png",
-        "name_zh": "女巫婆婆"
-      }
-    ],
-    "value": 133,
-    "type": "damage"
+    "name": "royal_recruits",
+    "display_name": "皇家卫队",
+    "hp": 547,
+    "damage": 133,
+    "img": "royal-recruits.png",
+    "comment": ""
   },
   {
-    "name": "royal_recruits_main",
-    "ref_cards": [
-      {
-        "img": "royal-recruits.png",
-        "name_zh": "皇家卫队"
-      }
-    ],
-    "value": 133,
-    "type": "damage"
+    "name": "witch",
+    "display_name": "女巫",
+    "hp": 839,
+    "damage": 135,
+    "img": "witch.png",
+    "comment": ""
   },
   {
-    "name": "witch_main",
-    "ref_cards": [
-      {
-        "img": "witch.png",
-        "name_zh": "女巫"
-      }
-    ],
-    "value": 135,
-    "type": "damage"
+    "name": "monk",
+    "display_name": "盖世武僧",
+    "hp": 2214,
+    "damage": 140,
+    "img": "monk.png",
+    "comment": ""
   },
   {
-    "name": "witch_ev_main",
-    "ref_cards": [
-      {
-        "img": "witch-ev.png",
-        "name_zh": "进化女巫"
-      }
-    ],
-    "value": 135,
-    "type": "damage"
+    "name": "magic_archer",
+    "display_name": "神箭游侠",
+    "hp": 529,
+    "damage": 143,
+    "img": "magic-archer.png",
+    "comment": ""
   },
   {
-    "name": "monk_main",
-    "ref_cards": [
-      {
-        "img": "monk.png",
-        "name_zh": "盖世武僧"
-      }
-    ],
-    "value": 140,
-    "type": "damage"
+    "name": "skeleton_barrel",
+    "display_name": "骷髅气球",
+    "hp": 532,
+    "damage": 145,
+    "img": "skeleton-barrel.png",
+    "comment": "亡语"
   },
   {
-    "name": "magic_archer_main",
-    "ref_cards": [
-      {
-        "img": "magic-archer.png",
-        "name_zh": "神箭游侠"
-      }
-    ],
-    "value": 143,
-    "type": "damage"
+    "name": "battle_healer",
+    "display_name": "战斗天使",
+    "hp": 1717,
+    "damage": 148,
+    "img": "battle-healer.png",
+    "comment": ""
   },
   {
-    "name": "skeleton_barrel_main",
-    "ref_cards": [
-      {
-        "img": "skeleton-barrel.png",
-        "comment_en": "death",
-        "name_zh": "骷髅气球",
-        "comment_zh": "亡语"
-      }
-    ],
-    "value": 145,
-    "type": "damage"
-  },
-  {
-    "name": "battle_healer_main",
-    "ref_cards": [
-      {
-        "img": "battle-healer.png",
-        "name_zh": "战斗天使"
-      }
-    ],
-    "value": 148,
-    "type": "damage"
-  },
-  {
-    "name": "freeze_main",
-    "ref_cards": [
-      {
-        "img": "freeze.png",
-        "name_zh": "冰冻法术"
-      }
-    ],
-    "value": 148,
-    "type": "damage"
+    "name": "freeze",
+    "display_name": "冰冻法术",
+    "hp": 0,
+    "damage": 148,
+    "img": "freeze.png",
+    "comment": ""
   },
   {
     "name": "musketeer_hero_cannon",
-    "ref_cards": [
-      {
-        "img": "musketeer-hero.png",
-        "comment_en": "turret",
-        "name_zh": "英雄火枪",
-        "comment_zh": "炮台"
-      }
-    ],
-    "value": 148,
-    "type": "damage"
+    "display_name": "英雄火枪",
+    "hp": 1536,
+    "damage": 148,
+    "img": "musketeer-hero.png",
+    "comment": "炮台"
   },
   {
-    "name": "dart_goblin_main",
-    "ref_cards": [
-      {
-        "img": "dart-goblin.png",
-        "name_zh": "吹箭哥布林"
-      }
-    ],
-    "value": 151,
-    "type": "damage"
+    "name": "dart_goblin",
+    "display_name": "吹箭哥布林",
+    "hp": 261,
+    "damage": 151,
+    "img": "dart-goblin.png",
+    "comment": ""
   },
   {
-    "name": "dart_goblin_ev_main",
-    "ref_cards": [
-      {
-        "img": "dart-goblin-ev.png",
-        "name_zh": "进化吹箭"
-      }
-    ],
-    "value": 151,
-    "type": "damage"
+    "name": "dart_goblin_ev",
+    "display_name": "进化吹箭",
+    "hp": 261,
+    "damage": 51,
+    "img": "dart-goblin-ev.png",
+    "comment": "1级毒药每击"
+  },
+  {
+    "name": "dart_goblin_ev",
+    "display_name": "进化吹箭",
+    "hp": 261,
+    "damage": 115,
+    "img": "dart-goblin-ev.png",
+    "comment": "2级毒药每击"
+  },
+  {
+    "name": "dart_goblin_ev",
+    "display_name": "进化吹箭",
+    "hp": 261,
+    "damage": 307,
+    "img": "dart-goblin-ev.png",
+    "comment": "3级毒药每击"
   },
   {
     "name": "void_many_two",
-    "ref_cards": [
-      {
-        "img": "void.png",
-        "comment_en": "2 hits (5+ target)",
-        "name_zh": "虚空法术",
-        "comment_zh": "2击（5个以上）"
-      }
-    ],
-    "value": 152,
-    "type": "damage"
+    "display_name": "虚空法术",
+    "hp": 0,
+    "damage": 152,
+    "img": "void.png",
+    "comment": "2击（5个以上）"
   },
   {
     "name": "void_middle_one",
-    "ref_cards": [
-      {
-        "img": "void.png",
-        "comment_en": "1 hit (2-4 target)",
-        "name_zh": "虚空法术",
-        "comment_zh": "1击（2-4个）"
-      }
-    ],
-    "value": 160,
-    "type": "damage"
+    "display_name": "虚空法术",
+    "hp": 0,
+    "damage": 160,
+    "img": "void.png",
+    "comment": "1击（2-4个）"
   },
   {
-    "name": "skeleton_dragons_main",
-    "ref_cards": [
-      {
-        "img": "skeleton-dragons.png",
-        "name_zh": "骷髅飞龙"
-      }
-    ],
-    "value": 161,
-    "type": "damage"
+    "name": "skeleton_dragons",
+    "display_name": "骷髅飞龙",
+    "hp": 560,
+    "damage": 161,
+    "img": "skeleton-dragons.png",
+    "comment": ""
   },
   {
-    "name": "baby_dragon_main",
-    "ref_cards": [
-      {
-        "img": "baby-dragon.png",
-        "name_zh": "飞龙宝宝"
-      }
-    ],
-    "value": 161,
-    "type": "damage"
+    "name": "baby_dragon",
+    "display_name": "飞龙宝宝",
+    "hp": 1152,
+    "damage": 161,
+    "img": "baby-dragon.png",
+    "comment": ""
   },
   {
-    "name": "golden_knight_main",
-    "ref_cards": [
-      {
-        "img": "golden-knight.png",
-        "name_zh": "黄金圣骑"
-      }
-    ],
-    "value": 161,
-    "type": "damage"
+    "name": "golden_knight",
+    "display_name": "黄金圣骑",
+    "hp": 1799,
+    "damage": 161,
+    "img": "golden-knight.png",
+    "comment": ""
   },
   {
     "name": "wall_breakers_ev_runner",
-    "ref_cards": [
-      {
-        "img": "wall-breakers-ev.png",
-        "comment_en": "runner",
-        "name_zh": "进化炸弹人",
-        "comment_zh": "奔跑者"
-      }
-    ],
-    "value": 163,
-    "type": "hp"
+    "display_name": "进化炸弹人",
+    "hp": 163,
+    "damage": 184,
+    "img": "wall-breakers-ev.png",
+    "comment": "奔跑者"
   },
   {
     "name": "phoenix_death",
-    "ref_cards": [
-      {
-        "img": "phoenix.png",
-        "comment_en": "death",
-        "name_zh": "凤凰",
-        "comment_zh": "亡语"
-      }
-    ],
-    "value": 163,
-    "type": "damage"
+    "display_name": "凤凰",
+    "hp": 317,
+    "damage": 163,
+    "img": "phoenix.png",
+    "comment": "蛋"
   },
   {
-    "name": "electro_giant_main",
-    "ref_cards": [
-      {
-        "img": "electro-giant.png",
-        "name_zh": "雷电巨人"
-      }
-    ],
-    "value": 163,
-    "type": "damage"
+    "name": "electro_giant",
+    "display_name": "雷电巨人",
+    "hp": 3855,
+    "damage": 163,
+    "img": "electro-giant.png",
+    "comment": ""
   },
   {
-    "name": "princess_main",
-    "ref_cards": [
-      {
-        "img": "princess.png",
-        "name_zh": "公主"
-      }
-    ],
-    "value": 168,
-    "type": "damage"
+    "name": "princess",
+    "display_name": "公主",
+    "hp": 261,
+    "damage": 168,
+    "img": "princess.png",
+    "comment": ""
   },
   {
     "name": "archers_ev_power_shot",
-    "ref_cards": [
-      {
-        "img": "archers-ev.png",
-        "comment_en": "power shot",
-        "name_zh": "进化弓箭",
-        "comment_zh": "强击"
-      }
-    ],
-    "value": 168,
-    "type": "damage"
+    "display_name": "进化弓箭",
+    "hp": 304,
+    "damage": 168,
+    "img": "archers-ev.png",
+    "comment": "强击"
   },
   {
     "name": "executioner_ev_close",
-    "ref_cards": [
-      {
-        "img": "executioner-ev.png",
-        "comment_en": "2 hit (close)",
-        "name_zh": "进化屠夫",
-        "comment_zh": "近距离来回"
-      }
-    ],
-    "value": 536,
-    "type": "damage"
+    "display_name": "进化屠夫",
+    "hp": 1280,
+    "damage": 536,
+    "img": "executioner-ev.png",
+    "comment": "近距离来回268*2"
   },
   {
-    "name": "flying_machine_main",
-    "ref_cards": [
-      {
-        "img": "flying-machine.png",
-        "name_zh": "飞行器"
-      }
-    ],
-    "value": 171,
-    "type": "damage"
+    "name": "flying_machine",
+    "display_name": "飞行器",
+    "hp": 614,
+    "damage": 171,
+    "img": "flying-machine.png",
+    "comment": ""
   },
   {
     "name": "tesla_ev_pulse",
-    "ref_cards": [
-      {
-        "img": "tesla-ev.png",
-        "comment_en": "pulse",
-        "name_zh": "进化电塔",
-        "comment_zh": "脉冲"
-      }
-    ],
-    "value": 174,
-    "type": "damage"
+    "display_name": "进化电塔",
+    "hp": 1152,
+    "damage": 174,
+    "img": "tesla-ev.png",
+    "comment": "脉冲"
   },
   {
-    "name": "goblin_giant_main",
-    "ref_cards": [
-      {
-        "img": "goblin-giant.png",
-        "name_zh": "哥布林巨人"
-      }
-    ],
-    "value": 176,
-    "type": "damage"
+    "name": "goblin_giant",
+    "display_name": "哥布林巨人",
+    "hp": 3020,
+    "damage": 176,
+    "img": "goblin-giant.png",
+    "comment": ""
   },
   {
-    "name": "giant_snowball_main",
-    "ref_cards": [
-      {
-        "img": "giant-snowball.png",
-        "name_zh": "大雪球"
-      }
-    ],
-    "value": 179,
-    "type": "damage"
+    "name": "giant_snowball",
+    "display_name": "大雪球",
+    "hp": 0,
+    "damage": 179,
+    "img": "giant-snowball.png",
+    "comment": ""
   },
   {
-    "name": "rage_main",
-    "ref_cards": [
-      {
-        "img": "rage.png",
-        "name_zh": "狂暴法术"
-      }
-    ],
-    "value": 179,
-    "type": "damage"
+    "name": "rage",
+    "display_name": "狂暴法术",
+    "hp": 0,
+    "damage": 179,
+    "img": "rage.png",
+    "comment": ""
   },
   {
-    "name": "furnace_main",
-    "ref_cards": [
-      {
-        "img": "furnace.png",
-        "name_zh": "烈焰熔炉"
-      }
-    ],
-    "value": 179,
-    "type": "damage"
+    "name": "furnace",
+    "display_name": "烈焰熔炉",
+    "hp": 727,
+    "damage": 179,
+    "img": "furnace.png",
+    "comment": ""
   },
   {
-    "name": "wall_breakers_ev_runner",
-    "ref_cards": [
-      {
-        "img": "wall-breakers-ev.png",
-        "comment_en": "runner",
-        "name_zh": "进化炸弹人",
-        "comment_zh": "奔跑者"
-      }
-    ],
-    "value": 184,
-    "type": "damage"
-  },
-  {
-    "name": "goblin_demolisher_main",
-    "ref_cards": [
-      {
-        "img": "goblin-demolisher.png",
-        "name_zh": "哥布林爆破手"
-      }
-    ],
-    "value": 186,
-    "type": "damage"
+    "name": "goblin_demolisher",
+    "display_name": "哥布林爆破手",
+    "hp": 1300,
+    "damage": 186,
+    "img": "goblin-demolisher.png",
+    "comment": ""
   },
   {
     "name": "wizard_ev_shield",
-    "ref_cards": [
-      {
-        "img": "wizard-ev.png",
-        "comment_en": "shield",
-        "name_zh": "进化火法",
-        "comment_zh": "护盾"
-      }
-    ],
-    "value": 192,
-    "type": "hp"
+    "display_name": "进化火法",
+    "hp": 192,
+    "damage": 281,
+    "img": "wizard-ev.png",
+    "comment": "护盾"
   },
   {
-    "name": "zap_main",
-    "ref_cards": [
-      {
-        "img": "zap.png",
-        "name_zh": "电击法术"
-      }
-    ],
-    "value": 192,
-    "type": "damage"
+    "name": "zap",
+    "display_name": "电击法术",
+    "hp": 0,
+    "damage": 192,
+    "img": "zap.png",
+    "comment": ""
   },
   {
     "name": "electro_wizard_appear",
-    "ref_cards": [
-      {
-        "img": "electro-wizard.png",
-        "comment_en": "spawn",
-        "name_zh": "闪电法师",
-        "comment_zh": "登场"
-      }
-    ],
-    "value": 192,
-    "type": "damage"
+    "display_name": "闪电法师",
+    "hp": 714,
+    "damage": 192,
+    "img": "electro-wizard.png",
+    "comment": "登场"
   },
   {
-    "name": "barbarians_main",
-    "ref_cards": [
-      {
-        "img": "barbarians.png",
-        "name_zh": "野蛮人"
-      }
-    ],
-    "value": 192,
-    "type": "damage"
+    "name": "barbarians",
+    "display_name": "野蛮人",
+    "hp": 691,
+    "damage": 192,
+    "img": "barbarians.png",
+    "comment": ""
   },
   {
-    "name": "electro_dragon_main",
-    "ref_cards": [
-      {
-        "img": "electro-dragon.png",
-        "name_zh": "雷电飞龙"
-      }
-    ],
-    "value": 192,
-    "type": "damage"
+    "name": "electro_dragon",
+    "display_name": "雷电飞龙",
+    "hp": 998,
+    "damage": 192,
+    "img": "electro-dragon.png",
+    "comment": ""
   },
   {
     "name": "electro_giant_reflection",
-    "ref_cards": [
-      {
-        "img": "electro-giant.png",
-        "comment_en": "reflected",
-        "name_zh": "雷电巨人",
-        "comment_zh": "反弹"
-      }
-    ],
-    "value": 192,
-    "type": "damage"
+    "display_name": "雷电巨人",
+    "hp": 3855,
+    "damage": 192,
+    "img": "electro-giant.png",
+    "comment": "反弹"
   },
   {
-    "name": "barbarians_ev_main",
-    "ref_cards": [
-      {
-        "img": "barbarians-ev.png",
-        "name_zh": "进化黄毛"
-      }
-    ],
-    "value": 192,
-    "type": "damage"
+    "name": "barbarians_ev",
+    "display_name": "进化黄毛",
+    "hp": 737,
+    "damage": 192,
+    "img": "barbarians-ev.png",
+    "comment": ""
   },
   {
-    "name": "miner_main",
-    "ref_cards": [
-      {
-        "img": "miner.png",
-        "name_zh": "掘地矿工"
-      }
-    ],
-    "value": 194,
-    "type": "damage"
+    "name": "miner",
+    "display_name": "掘地矿工",
+    "hp": 1210,
+    "damage": 194,
+    "img": "miner.png",
+    "comment": ""
   },
   {
-    "name": "bandit_main",
-    "ref_cards": [
-      {
-        "img": "bandit.png",
-        "name_zh": "刺客"
-      }
-    ],
-    "value": 194,
-    "type": "damage"
+    "name": "bandit",
+    "display_name": "刺客",
+    "hp": 906,
+    "damage": 194,
+    "img": "bandit.png",
+    "comment": ""
   },
   {
-    "name": "fisherman_main",
-    "ref_cards": [
-      {
-        "img": "fisherman.png",
-        "name_zh": "渔夫"
-      }
-    ],
-    "value": 194,
-    "type": "damage"
+    "name": "fisherman",
+    "display_name": "渔夫",
+    "hp": 870,
+    "damage": 194,
+    "img": "fisherman.png",
+    "comment": ""
   },
   {
-    "name": "goblins_main",
-    "ref_cards": [
-      {
-        "img": "goblins.png",
-        "name_zh": "哥布林"
-      }
-    ],
-    "value": 202,
-    "type": "hp"
+    "name": "knight",
+    "display_name": "骑士",
+    "hp": 1766,
+    "damage": 202,
+    "img": "knight.png",
+    "comment": ""
   },
   {
-    "name": "knight_main",
-    "ref_cards": [
-      {
-        "img": "knight.png",
-        "name_zh": "骑士"
-      }
-    ],
-    "value": 202,
-    "type": "damage"
+    "name": "skeleton_king",
+    "display_name": "骷髅帝王",
+    "hp": 2298,
+    "damage": 204,
+    "img": "skeleton-king.png",
+    "comment": ""
   },
   {
-    "name": "skeleton_king_main",
-    "ref_cards": [
-      {
-        "img": "skeleton-king.png",
-        "name_zh": "骷髅帝王"
-      }
-    ],
-    "value": 204,
-    "type": "damage"
-  },
-  {
-    "name": "three_musketeers_main",
-    "ref_cards": [
-      {
-        "img": "three-musketeers.png",
-        "name_zh": "三个火枪手"
-      }
-    ],
-    "value": 204,
-    "type": "damage"
+    "name": "three_musketeers",
+    "display_name": "三个火枪手",
+    "hp": 883,
+    "damage": 204,
+    "img": "three-musketeers.png",
+    "comment": "远程"
   },
   {
     "name": "royal_ghost_ev_appear_servant",
-    "ref_cards": [
-      {
-        "img": "royal-ghost-ev.png",
-        "comment_en": "spawn (souldier)",
-        "name_zh": "进化幽灵",
-        "comment_zh": "召唤阴兵"
-      }
-    ],
-    "value": 204,
-    "type": "damage"
+    "display_name": "进化幽灵",
+    "hp": 81,
+    "damage": 204,
+    "img": "royal-ghost-ev.png",
+    "comment": "召唤阴兵"
   },
   {
     "name": "musketeer_hero_cannon_appear",
-    "ref_cards": [
-      {
-        "img": "musketeer-hero.png",
-        "comment_en": "spawn (turret)",
-        "name_zh": "英雄火枪",
-        "comment_zh": "炮台登场"
-      }
-    ],
-    "value": 204,
-    "type": "damage"
+    "display_name": "英雄火枪",
+    "hp": 1536,
+    "damage": 204,
+    "img": "musketeer-hero.png",
+    "comment": "炮台登场"
   },
   {
-    "name": "fire_spirit_main",
-    "ref_cards": [
-      {
-        "img": "fire-spirit.png",
-        "name_zh": "烈焰精灵"
-      }
-    ],
-    "value": 207,
-    "type": "damage"
+    "name": "fire_spirit",
+    "display_name": "烈焰精灵",
+    "hp": 230,
+    "damage": 207,
+    "img": "fire-spirit.png",
+    "comment": ""
   },
   {
     "name": "goblin_curse_total",
-    "ref_cards": [
-      {
-        "img": "goblin-curse.png",
-        "comment_en": "total",
-        "name_zh": "哥布林诅咒",
-        "comment_zh": "总伤"
-      }
-    ],
-    "value": 210,
-    "type": "damage"
+    "display_name": "哥布林诅咒",
+    "hp": 0,
+    "damage": 210,
+    "img": "goblin-curse.png",
+    "comment": "总伤35*6"
   },
   {
-    "name": "cannon_main",
-    "ref_cards": [
-      {
-        "img": "cannon.png",
-        "name_zh": "加农炮"
-      }
-    ],
-    "value": 212,
-    "type": "damage"
+    "name": "cannon",
+    "display_name": "加农炮",
+    "hp": 824,
+    "damage": 212,
+    "img": "cannon.png",
+    "comment": ""
   },
   {
-    "name": "cannon_cart_main",
-    "ref_cards": [
-      {
-        "img": "cannon-cart.png",
-        "name_zh": "加农炮战车"
-      }
-    ],
-    "value": 212,
-    "type": "damage"
+    "name": "cannon_cart",
+    "display_name": "加农炮战车",
+    "hp": 1809,
+    "damage": 212,
+    "img": "cannon-cart.png",
+    "comment": ""
   },
   {
-    "name": "goblin_machine_main",
-    "ref_cards": [
-      {
-        "img": "goblin-machine.png",
-        "name_zh": "哥布林机甲"
-      }
-    ],
-    "value": 212,
-    "type": "damage"
+    "name": "goblin_machine",
+    "display_name": "哥布林机甲",
+    "hp": 2150,
+    "damage": 212,
+    "img": "goblin-machine.png",
+    "comment": ""
   },
   {
     "name": "battle_ram_ev_pushback",
-    "ref_cards": [
-      {
-        "img": "battle-ram-ev.png",
-        "comment_en": "pushback",
-        "name_zh": "进化锤子",
-        "comment_zh": "击退"
-      }
-    ],
-    "value": 212,
-    "type": "damage"
-  },
-  {
-    "name": "lava_hound_puppy",
-    "ref_cards": [
-      {
-        "img": "lava-hound.png",
-        "comment_en": "pups",
-        "name_zh": "熔岩猎犬",
-        "comment_zh": "小狗"
-      }
-    ],
-    "value": 215,
-    "type": "hp"
+    "display_name": "进化锤子",
+    "hp": 967,
+    "damage": 212,
+    "img": "battle-ram-ev.png",
+    "comment": "击退"
   },
   {
     "name": "little_prince_guardian",
-    "ref_cards": [
-      {
-        "img": "little-prince.png",
-        "comment_en": "guardian",
-        "name_zh": "小王子",
-        "comment_zh": "护卫"
-      }
-    ],
-    "value": 217,
-    "type": "damage"
+    "display_name": "小王子",
+    "hp": 1600,
+    "damage": 217,
+    "img": "little-prince.png",
+    "comment": "护卫"
   },
   {
-    "name": "musketeer_main",
-    "ref_cards": [
-      {
-        "img": "musketeer.png",
-        "name_zh": "火枪手"
-      }
-    ],
-    "value": 217,
-    "type": "damage"
+    "name": "musketeer",
+    "display_name": "火枪手",
+    "hp": 721,
+    "damage": 217,
+    "img": "musketeer.png",
+    "comment": ""
   },
   {
-    "name": "phoenix_main",
-    "ref_cards": [
-      {
-        "img": "phoenix.png",
-        "name_zh": "凤凰"
-      }
-    ],
-    "value": 217,
-    "type": "damage"
+    "name": "phoenix",
+    "display_name": "凤凰",
+    "hp": 1052,
+    "damage": 217,
+    "img": "phoenix.png",
+    "comment": ""
   },
   {
     "name": "rascals_boy",
-    "ref_cards": [
-      {
-        "img": "rascals.png",
-        "comment_en": "boy",
-        "name_zh": "绿林团伙",
-        "comment_zh": "小哥"
-      }
-    ],
-    "value": 217,
-    "type": "damage"
+    "display_name": "绿林团伙",
+    "hp": 1940,
+    "damage": 217,
+    "img": "rascals.png",
+    "comment": "小哥"
   },
   {
-    "name": "tesla_main",
-    "ref_cards": [
-      {
-        "img": "tesla.png",
-        "name_zh": "特斯拉电磁塔"
-      }
-    ],
-    "value": 220,
-    "type": "damage"
+    "name": "tesla",
+    "display_name": "特斯拉电磁塔",
+    "hp": 1152,
+    "damage": 220,
+    "img": "tesla.png",
+    "comment": ""
   },
   {
-    "name": "skeleton_barrel_ev_death_one",
-    "ref_cards": [
-      {
-        "img": "skeleton-barrel-ev.png",
-        "comment_en": "1 hit (death)",
-        "name_zh": "进化骨球",
-        "comment_zh": "1次亡语"
-      }
-    ],
-    "value": 220,
-    "type": "damage"
-  },
-  {
-    "name": "bomb_tower_main",
-    "ref_cards": [
-      {
-        "img": "bomb-tower.png",
-        "name_zh": "炸弹塔"
-      }
-    ],
-    "value": 222,
-    "type": "damage"
+    "name": "bomb_tower",
+    "display_name": "炸弹塔",
+    "hp": 1356,
+    "damage": 222,
+    "img": "bomb-tower.png",
+    "comment": ""
   },
   {
     "name": "bomb_tower_death",
-    "ref_cards": [
-      {
-        "img": "bomb-tower.png",
-        "comment_en": "death",
-        "name_zh": "炸弹塔",
-        "comment_zh": "亡语"
-      }
-    ],
-    "value": 222,
-    "type": "damage"
+    "display_name": "炸弹塔",
+    "hp": 1356,
+    "damage": 222,
+    "img": "bomb-tower.png",
+    "comment": "亡语"
   },
   {
-    "name": "archers_total",
-    "ref_cards": [
-      {
-        "img": "archers.png",
-        "comment_en": "2 units total",
-        "name_zh": "弓箭手",
-        "comment_zh": "2个"
-      }
-    ],
-    "value": 224,
-    "type": "damage"
+    "name": "bomber",
+    "display_name": "投弹兵",
+    "hp": 304,
+    "damage": 225,
+    "img": "bomber.png",
+    "comment": ""
   },
   {
-    "name": "bomber_main",
-    "ref_cards": [
-      {
-        "img": "bomber.png",
-        "name_zh": "投弹兵"
-      }
-    ],
-    "value": 225,
-    "type": "damage"
-  },
-  {
-    "name": "archer_queen_main",
-    "ref_cards": [
-      {
-        "img": "archer-queen.png",
-        "name_zh": "弓箭女皇"
-      }
-    ],
-    "value": 225,
-    "type": "damage"
+    "name": "archer_queen",
+    "display_name": "弓箭女皇",
+    "hp": 1000,
+    "damage": 225,
+    "img": "archer-queen.png",
+    "comment": ""
   },
   {
     "name": "golem_death",
-    "ref_cards": [
-      {
-        "img": "golem.png",
-        "comment_en": "death",
-        "name_zh": "戈仑石人",
-        "comment_zh": "亡语"
-      }
-    ],
-    "value": 225,
-    "type": "damage"
-  },
-  {
-    "name": "bomber_ev_bounce",
-    "ref_cards": [
-      {
-        "img": "bomber-ev.png",
-        "comment_en": "bounce",
-        "name_zh": "进化投弹兵",
-        "comment_zh": "跳弹"
-      }
-    ],
-    "value": 225,
-    "type": "damage"
+    "display_name": "戈仑石人",
+    "hp": 5120,
+    "damage": 225,
+    "img": "golem.png",
+    "comment": "亡语"
   },
   {
     "name": "void_many_all",
-    "ref_cards": [
-      {
-        "img": "void.png",
-        "comment_en": "3 hits (5+ target)",
-        "name_zh": "虚空法术",
-        "comment_zh": "3击（5个以上）"
-      }
-    ],
-    "value": 228,
-    "type": "damage"
+    "display_name": "虚空法术",
+    "hp": 0,
+    "damage": 228,
+    "img": "void.png",
+    "comment": "3击（5个以上）"
   },
   {
-    "name": "fire_spirit_main",
-    "ref_cards": [
-      {
-        "img": "fire-spirit.png",
-        "name_zh": "烈焰精灵"
-      }
-    ],
-    "value": 230,
-    "type": "hp"
-  },
-  {
-    "name": "electro_spirit_main",
-    "ref_cards": [
-      {
-        "img": "electro-spirit.png",
-        "name_zh": "雷电精灵"
-      }
-    ],
-    "value": 230,
-    "type": "hp"
-  },
-  {
-    "name": "ice_spirit_main",
-    "ref_cards": [
-      {
-        "img": "ice-spirit.png",
-        "name_zh": "冰雪精灵"
-      }
-    ],
-    "value": 230,
-    "type": "hp"
-  },
-  {
-    "name": "heal_spirit_main",
-    "ref_cards": [
-      {
-        "img": "heal-spirit.png",
-        "name_zh": "治疗精灵"
-      }
-    ],
-    "value": 230,
-    "type": "hp"
-  },
-  {
-    "name": "minions_main",
-    "ref_cards": [
-      {
-        "img": "minions.png",
-        "name_zh": "亡灵"
-      }
-    ],
-    "value": 230,
-    "type": "hp"
-  },
-  {
-    "name": "ice_spirit_ev_main",
-    "ref_cards": [
-      {
-        "img": "ice-spirit-ev.png",
-        "name_zh": "进化冰豆"
-      }
-    ],
-    "value": 230,
-    "type": "hp"
-  },
-  {
-    "name": "barbarian_barrel_main",
-    "ref_cards": [
-      {
-        "img": "barbarian-barrel.png",
-        "name_zh": "野蛮人滚桶"
-      }
-    ],
-    "value": 232,
-    "type": "damage"
+    "name": "barbarian_barrel",
+    "display_name": "野蛮人滚桶",
+    "hp": 0,
+    "damage": 232,
+    "img": "barbarian-barrel.png",
+    "comment": ""
   },
   {
     "name": "dark_prince_shield",
-    "ref_cards": [
-      {
-        "img": "dark-prince.png",
-        "comment_en": "shield",
-        "name_zh": "黑暗王子",
-        "comment_zh": "护盾"
-      }
-    ],
-    "value": 240,
-    "type": "hp"
+    "display_name": "黑暗王子",
+    "hp": 240,
+    "damage": 0,
+    "img": "dark-prince.png",
+    "comment": "护盾"
   },
   {
     "name": "royal_recruits_shield",
-    "ref_cards": [
-      {
-        "img": "royal-recruits.png",
-        "comment_en": "shield",
-        "name_zh": "皇家卫队",
-        "comment_zh": "护盾"
-      }
-    ],
-    "value": 240,
-    "type": "hp"
+    "display_name": "皇家卫队",
+    "hp": 240,
+    "damage": 0,
+    "img": "royal-recruits.png",
+    "comment": "护盾"
   },
   {
     "name": "balloon_bomb",
-    "ref_cards": [
-      {
-        "img": "balloon.png",
-        "comment_en": "death",
-        "name_zh": "气球兵",
-        "comment_zh": "亡语"
-      }
-    ],
-    "value": 240,
-    "type": "damage"
+    "display_name": "气球兵",
+    "hp": 1676,
+    "damage": 240,
+    "img": "balloon.png",
+    "comment": "亡语"
   },
   {
     "name": "earthquake_total",
-    "ref_cards": [
-      {
-        "img": "earthquake.png",
-        "comment_en": "total",
-        "name_zh": "地震法术",
-        "comment_zh": "总伤"
-      }
-    ],
-    "value": 243,
-    "type": "damage"
+    "display_name": "地震法术",
+    "hp": 0,
+    "damage": 243,
+    "img": "earthquake.png",
+    "comment": "总伤81*3"
   },
   {
     "name": "bats_ev_max",
-    "ref_cards": [
-      {
-        "img": "bats-ev.png",
-        "comment_en": "max",
-        "name_zh": "进化蝙蝠",
-        "comment_zh": "最大血量"
-      }
-    ],
-    "value": 244,
-    "type": "hp"
+    "display_name": "进化蝙蝠",
+    "hp": 244,
+    "damage": 81,
+    "img": "bats-ev.png",
+    "comment": "最大血量"
   },
   {
-    "name": "boss_bandit_main",
-    "ref_cards": [
-      {
-        "img": "boss-bandit.png",
-        "name_zh": "刺客首领"
-      }
-    ],
-    "value": 245,
-    "type": "damage"
+    "name": "boss_bandit",
+    "display_name": "刺客首领",
+    "hp": 2624,
+    "damage": 245,
+    "img": "boss-bandit.png",
+    "comment": ""
   },
   {
-    "name": "ram_rider_main",
-    "ref_cards": [
-      {
-        "img": "ram-rider.png",
-        "name_zh": "蛮羊骑士"
-      }
-    ],
-    "value": 250,
-    "type": "damage"
-  },
-  {
-    "name": "rascals_girl_two",
-    "ref_cards": [
-      {
-        "img": "rascals.png",
-        "comment_en": "2 girls total",
-        "name_zh": "绿林团伙",
-        "comment_zh": "2个小妹"
-      }
-    ],
-    "value": 250,
-    "type": "damage"
+    "name": "ram_rider",
+    "display_name": "蛮羊骑士",
+    "hp": 1697,
+    "damage": 250,
+    "img": "ram-rider.png",
+    "comment": ""
   },
   {
     "name": "elixir_golem_big",
-    "ref_cards": [
-      {
-        "img": "elixir-golem.png",
-        "comment_en": "big",
-        "name_zh": "圣水戈仑",
-        "comment_zh": "大泡泡"
-      }
-    ],
-    "value": 253,
-    "type": "damage"
+    "display_name": "圣水戈仑",
+    "hp": 1569,
+    "damage": 253,
+    "img": "elixir-golem.png",
+    "comment": "大泡泡"
   },
   {
-    "name": "giant_main",
-    "ref_cards": [
-      {
-        "img": "giant.png",
-        "name_zh": "巨人"
-      }
-    ],
-    "value": 253,
-    "type": "damage"
+    "name": "giant",
+    "display_name": "巨人",
+    "hp": 3968,
+    "damage": 253,
+    "img": "giant.png",
+    "comment": ""
   },
   {
     "name": "guards_shield",
-    "ref_cards": [
-      {
-        "img": "guards.png",
-        "comment_en": "shield",
-        "name_zh": "骷髅守卫",
-        "comment_zh": "护盾"
-      }
-    ],
-    "value": 256,
-    "type": "hp"
+    "display_name": "骷髅守卫",
+    "hp": 256,
+    "damage": 0,
+    "img": "guards.png",
+    "comment": "护盾"
   },
   {
     "name": "suspicious_bush_goblin",
-    "ref_cards": [
-      {
-        "img": "suspicious-bush.png",
-        "comment_en": "goblin",
-        "name_zh": "可疑草丛",
-        "comment_zh": "草丛哥布林"
-      }
-    ],
-    "value": 256,
-    "type": "damage"
+    "display_name": "可疑草丛",
+    "hp": 304,
+    "damage": 256,
+    "img": "suspicious-bush.png",
+    "comment": "草丛哥布林"
   },
   {
     "name": "little_prince_guardian_dash",
-    "ref_cards": [
-      {
-        "img": "little-prince.png",
-        "comment_en": "guardian charge",
-        "name_zh": "小王子",
-        "comment_zh": "护卫冲锋"
-      }
-    ],
-    "value": 256,
-    "type": "damage"
+    "display_name": "小王子",
+    "hp": 1600,
+    "damage": 256,
+    "img": "little-prince.png",
+    "comment": "护卫冲锋"
   },
   {
-    "name": "lumberjack_main",
-    "ref_cards": [
-      {
-        "img": "lumberjack.png",
-        "name_zh": "狂暴樵夫"
-      }
-    ],
-    "value": 256,
-    "type": "damage"
+    "name": "lumberjack",
+    "display_name": "狂暴樵夫",
+    "hp": 1282,
+    "damage": 256,
+    "img": "lumberjack.png",
+    "comment": ""
   },
   {
-    "name": "lumberjack_ev_ghost",
-    "ref_cards": [
-      {
-        "img": "lumberjack-ev.png",
-        "comment_en": "ghost",
-        "name_zh": "进化樵夫",
-        "comment_zh": "幽魂攻击"
-      }
-    ],
-    "value": 256,
-    "type": "damage"
+    "name": "royal_ghost",
+    "display_name": "幽灵",
+    "hp": 1210,
+    "damage": 261,
+    "img": "royal-ghost.png",
+    "comment": ""
   },
   {
-    "name": "princess_main",
-    "ref_cards": [
-      {
-        "img": "princess.png",
-        "name_zh": "公主"
-      }
-    ],
-    "value": 261,
-    "type": "hp"
+    "name": "royal_ghost_ev",
+    "display_name": "进化幽灵",
+    "hp": 1210,
+    "damage": 261,
+    "img": "royal-ghost-ev.png",
+    "comment": ""
   },
   {
-    "name": "rascals_girl",
-    "ref_cards": [
-      {
-        "img": "rascals.png",
-        "comment_en": "girl",
-        "name_zh": "绿林团伙",
-        "comment_zh": "小妹"
-      }
-    ],
-    "value": 261,
-    "type": "hp"
+    "name": "valkyrie",
+    "display_name": "女武神",
+    "hp": 1907,
+    "damage": 266,
+    "img": "valkyrie.png",
+    "comment": ""
   },
   {
-    "name": "dart_goblin_ev_main",
-    "ref_cards": [
-      {
-        "img": "dart-goblin-ev.png",
-        "name_zh": "进化吹箭"
-      }
-    ],
-    "value": 261,
-    "type": "hp"
+    "name": "mortar",
+    "display_name": "迫击炮",
+    "hp": 1369,
+    "damage": 266,
+    "img": "mortar.png",
+    "comment": ""
   },
   {
-    "name": "royal_ghost_main",
-    "ref_cards": [
-      {
-        "img": "royal-ghost.png",
-        "name_zh": "幽灵"
-      }
-    ],
-    "value": 261,
-    "type": "damage"
-  },
-  {
-    "name": "royal_ghost_ev_main",
-    "ref_cards": [
-      {
-        "img": "royal-ghost-ev.png",
-        "name_zh": "进化幽灵"
-      }
-    ],
-    "value": 261,
-    "type": "damage"
-  },
-  {
-    "name": "valkyrie_main",
-    "ref_cards": [
-      {
-        "img": "valkyrie.png",
-        "name_zh": "女武神"
-      }
-    ],
-    "value": 266,
-    "type": "damage"
-  },
-  {
-    "name": "mortar_main",
-    "ref_cards": [
-      {
-        "img": "mortar.png",
-        "name_zh": "迫击炮"
-      }
-    ],
-    "value": 266,
-    "type": "damage"
-  },
-  {
-    "name": "dark_prince_main",
-    "ref_cards": [
-      {
-        "img": "dark-prince.png",
-        "name_zh": "黑暗王子"
-      }
-    ],
-    "value": 266,
-    "type": "damage"
+    "name": "dark_prince",
+    "display_name": "黑暗王子",
+    "hp": 1200,
+    "damage": 266,
+    "img": "dark-prince.png",
+    "comment": ""
   },
   {
     "name": "royal_recruits_ev_dash",
-    "ref_cards": [
-      {
-        "img": "royal-recruits-ev.png",
-        "comment_en": "charge",
-        "name_zh": "进化卫队",
-        "comment_zh": "冲锋"
-      }
-    ],
-    "value": 266,
-    "type": "damage"
+    "display_name": "进化卫队",
+    "hp": 547,
+    "damage": 266,
+    "img": "royal-recruits-ev.png",
+    "comment": "冲锋"
   },
   {
-    "name": "the_log_main",
-    "ref_cards": [
-      {
-        "img": "the-log.png",
-        "name_zh": "复仇滚木"
-      }
-    ],
-    "value": 268,
-    "type": "damage"
+    "name": "the_log",
+    "display_name": "复仇滚木",
+    "hp": 0,
+    "damage": 268,
+    "img": "the-log.png",
+    "comment": ""
   },
   {
-    "name": "mega_knight_main",
-    "ref_cards": [
-      {
-        "img": "mega-knight.png",
-        "name_zh": "超级骑士"
-      }
-    ],
-    "value": 268,
-    "type": "damage"
+    "name": "mega_knight",
+    "display_name": "超级骑士",
+    "hp": 3993,
+    "damage": 268,
+    "img": "mega-knight.png",
+    "comment": ""
   },
   {
-    "name": "giant_skeleton_main",
-    "ref_cards": [
-      {
-        "img": "giant-skeleton.png",
-        "name_zh": "骷髅巨人"
-      }
-    ],
-    "value": 276,
-    "type": "damage"
+    "name": "giant_skeleton",
+    "display_name": "骷髅巨人",
+    "hp": 3617,
+    "damage": 276,
+    "img": "giant-skeleton.png",
+    "comment": ""
   },
   {
-    "name": "wizard_main",
-    "ref_cards": [
-      {
-        "img": "wizard.png",
-        "name_zh": "法师"
-      }
-    ],
-    "value": 281,
-    "type": "damage"
+    "name": "wizard",
+    "display_name": "法师",
+    "hp": 755,
+    "damage": 281,
+    "img": "wizard.png",
+    "comment": ""
   },
   {
     "name": "cannon_ev_bombing",
-    "ref_cards": [
-      {
-        "img": "cannon-ev.png",
-        "comment_en": "barrage",
-        "name_zh": "进化土炮",
-        "comment_zh": "轰炸"
-      }
-    ],
-    "value": 281,
-    "type": "damage"
+    "display_name": "进化土炮",
+    "hp": 824,
+    "damage": 281,
+    "img": "cannon-ev.png",
+    "comment": "轰炸"
   },
   {
-    "name": "wizard_ev_shield_bomb",
-    "ref_cards": [
-      {
-        "img": "wizard-ev.png",
-        "comment_en": "explosion",
-        "name_zh": "进化火法",
-        "comment_zh": "护盾"
-      }
-    ],
-    "value": 281,
-    "type": "damage"
+    "name": "bowler",
+    "display_name": "巨石投手",
+    "hp": 2081,
+    "damage": 289,
+    "img": "bowler.png",
+    "comment": ""
   },
   {
-    "name": "bowler_main",
-    "ref_cards": [
-      {
-        "img": "bowler.png",
-        "name_zh": "巨石投手"
-      }
-    ],
-    "value": 289,
-    "type": "damage"
-  },
-  {
-    "name": "bomber_main",
-    "ref_cards": [
-      {
-        "img": "bomber.png",
-        "name_zh": "投弹兵"
-      }
-    ],
-    "value": 304,
-    "type": "hp"
-  },
-  {
-    "name": "suspicious_bush_goblin",
-    "ref_cards": [
-      {
-        "img": "suspicious-bush.png",
-        "comment_en": "goblin",
-        "name_zh": "可疑草丛",
-        "comment_zh": "草丛哥布林"
-      }
-    ],
-    "value": 304,
-    "type": "hp"
-  },
-  {
-    "name": "archers_main",
-    "ref_cards": [
-      {
-        "img": "archers.png",
-        "name_zh": "弓箭手"
-      }
-    ],
-    "value": 304,
-    "type": "hp"
-  },
-  {
-    "name": "firecracker_main",
-    "ref_cards": [
-      {
-        "img": "firecracker.png",
-        "name_zh": "烟花炮手"
-      }
-    ],
-    "value": 304,
-    "type": "hp"
-  },
-  {
-    "name": "bomber_ev_main",
-    "ref_cards": [
-      {
-        "img": "bomber-ev.png",
-        "name_zh": "进化投弹兵"
-      }
-    ],
-    "value": 304,
-    "type": "hp"
+    "name": "firecracker",
+    "display_name": "烟花炮手",
+    "hp": 304,
+    "damage": 320,
+    "img": "firecracker.png",
+    "comment": "5弹全中64*5"
   },
   {
     "name": "goblin_machine_rocket",
-    "ref_cards": [
-      {
-        "img": "goblin-machine.png",
-        "comment_en": "rocket",
-        "name_zh": "哥布林机甲",
-        "comment_zh": "火箭"
-      }
-    ],
-    "value": 304,
-    "type": "damage"
+    "display_name": "哥布林机甲",
+    "hp": 2150,
+    "damage": 304,
+    "img": "goblin-machine.png",
+    "comment": "火箭"
   },
   {
     "name": "vines_total",
-    "ref_cards": [
-      {
-        "img": "vines.png",
-        "comment_en": "total",
-        "name_zh": "藤蔓",
-        "comment_zh": "总伤"
-      }
-    ],
-    "value": 306,
-    "type": "damage"
+    "display_name": "藤蔓",
+    "hp": 0,
+    "damage": 306,
+    "img": "vines.png",
+    "comment": "总伤153*2"
   },
   {
-    "name": "royal_giant_main",
-    "ref_cards": [
-      {
-        "img": "royal-giant.png",
-        "name_zh": "皇家巨人"
-      }
-    ],
-    "value": 307,
-    "type": "damage"
+    "name": "royal_giant",
+    "display_name": "皇家巨人",
+    "hp": 3164,
+    "damage": 307,
+    "img": "royal-giant.png",
+    "comment": ""
   },
   {
     "name": "spirit_empress_flying",
-    "ref_cards": [
-      {
-        "img": "spirit-empress.png",
-        "comment_en": "6 elixir",
-        "name_zh": "精灵女王",
-        "comment_zh": "空中形态"
-      }
-    ],
-    "value": 307,
-    "type": "damage"
+    "display_name": "精灵女王",
+    "hp": 1177,
+    "damage": 307,
+    "img": "spirit-empress.png",
+    "comment": "空中形态"
   },
   {
     "name": "spirit_empress_walker",
-    "ref_cards": [
-      {
-        "img": "spirit-empress.png",
-        "comment_en": "3 elixir",
-        "name_zh": "精灵女王",
-        "comment_zh": "地面形态"
-      }
-    ],
-    "value": 307,
-    "type": "damage"
+    "display_name": "精灵女王",
+    "hp": 1152,
+    "damage": 307,
+    "img": "spirit-empress.png",
+    "comment": "地面形态"
   },
   {
-    "name": "mega_minion_main",
-    "ref_cards": [
-      {
-        "img": "mega-minion.png",
-        "name_zh": "重甲亡灵"
-      }
-    ],
-    "value": 312,
-    "type": "damage"
+    "name": "mega_minion",
+    "display_name": "重甲亡灵",
+    "hp": 837,
+    "damage": 312,
+    "img": "mega-minion.png",
+    "comment": ""
   },
   {
-    "name": "golem_main",
-    "ref_cards": [
-      {
-        "img": "golem.png",
-        "name_zh": "戈仑石人"
-      }
-    ],
-    "value": 312,
-    "type": "damage"
+    "name": "golem",
+    "display_name": "戈仑石人",
+    "hp": 5120,
+    "damage": 312,
+    "img": "golem.png",
+    "comment": ""
   },
   {
-    "name": "night_witch_main",
-    "ref_cards": [
-      {
-        "img": "night-witch.png",
-        "name_zh": "暗夜女巫"
-      }
-    ],
-    "value": 314,
-    "type": "damage"
+    "name": "night_witch",
+    "display_name": "暗夜女巫",
+    "hp": 906,
+    "damage": 314,
+    "img": "night-witch.png",
+    "comment": ""
   },
   {
     "name": "three_musketeers_near_one",
-    "ref_cards": [
-      {
-        "img": "three-musketeers.png",
-        "comment_en": "close",
-        "name_zh": "三个火枪手",
-        "comment_zh": "近战"
-      }
-    ],
-    "value": 314,
-    "type": "damage"
+    "display_name": "三个火枪手",
+    "hp": 883,
+    "damage": 314,
+    "img": "three-musketeers.png",
+    "comment": "近战"
   },
   {
-    "name": "phoenix_egg",
-    "ref_cards": [
-      {
-        "img": "phoenix.png",
-        "comment_en": "egg",
-        "name_zh": "凤凰",
-        "comment_zh": "蛋"
-      }
-    ],
-    "value": 317,
-    "type": "hp"
-  },
-  {
-    "name": "hog_rider_main",
-    "ref_cards": [
-      {
-        "img": "hog-rider.png",
-        "name_zh": "野猪骑士"
-      }
-    ],
-    "value": 317,
-    "type": "damage"
-  },
-  {
-    "name": "firecracker_main",
-    "ref_cards": [
-      {
-        "img": "firecracker.png",
-        "comment_en": "5 hits",
-        "name_zh": "烟花炮手",
-        "comment_zh": "5弹全中"
-      }
-    ],
-    "value": 320,
-    "type": "damage"
+    "name": "hog_rider",
+    "display_name": "野猪骑士",
+    "hp": 1697,
+    "damage": 317,
+    "img": "hog-rider.png",
+    "comment": ""
   },
   {
     "name": "void_middle_two",
-    "ref_cards": [
-      {
-        "img": "void.png",
-        "comment_en": "2 hits (2-4 target)",
-        "name_zh": "虚空法术",
-        "comment_zh": "2击（2-4个）"
-      }
-    ],
-    "value": 320,
-    "type": "damage"
+    "display_name": "虚空法术",
+    "hp": 0,
+    "damage": 320,
+    "img": "void.png",
+    "comment": "2击（2-4个）"
   },
   {
-    "name": "cannoneer_main",
-    "ref_cards": [
-      {
-        "img": "cannoneer.png",
-        "name_zh": "加农炮手"
-      }
-    ],
-    "value": 320,
-    "type": "damage"
+    "name": "cannoneer",
+    "display_name": "加农炮手",
+    "hp": 2616,
+    "damage": 320,
+    "img": "cannoneer.png",
+    "comment": ""
   },
   {
     "name": "firecracker_ev_spark",
-    "ref_cards": [
-      {
-        "img": "firecracker-ev.png",
-        "comment_en": "spark",
-        "name_zh": "进化烟花",
-        "comment_zh": "火花每击"
-      }
-    ],
-    "value": 48,
-    "type": "damage"
+    "display_name": "进化烟花",
+    "hp": 304,
+    "damage": 480,
+    "img": "firecracker-ev.png",
+    "comment": "小火花总伤48*10"
   },
   {
     "name": "firecracker_ev_spark_total",
-    "ref_cards": [
-      {
-        "img": "firecracker-ev.png",
-        "comment_en": "spark-total",
-        "name_zh": "进化烟花",
-        "comment_zh": "火花总伤"
-      }
-    ],
-    "value": 576,
-    "type": "damage"
+    "display_name": "进化烟花",
+    "hp": 304,
+    "damage": 576,
+    "img": "firecracker-ev.png",
+    "comment": "大火花总伤48*12"
   },
   {
-    "name": "minions_total",
-    "ref_cards": [
-      {
-        "img": "minions.png",
-        "comment_en": "3 units total",
-        "name_zh": "亡灵",
-        "comment_zh": "3个"
-      }
-    ],
-    "value": 321,
-    "type": "damage"
+    "name": "minions_horde_total",
+    "display_name": "亡灵大军",
+    "hp": 230,
+    "damage": 642,
+    "img": "minion-horde.png",
+    "comment": "6个总伤107*6"
   },
   {
-    "name": "skeleton_dragons_total",
-    "ref_cards": [
-      {
-        "img": "skeleton-dragons.png",
-        "comment_en": "2 units total",
-        "name_zh": "骷髅飞龙",
-        "comment_zh": "2个"
-      }
-    ],
-    "value": 322,
-    "type": "damage"
+    "name": "wall_breakers",
+    "display_name": "攻城炸弹人",
+    "hp": 330,
+    "damage": 350,
+    "img": "wall-breakers.png",
+    "comment": ""
   },
   {
-    "name": "wall_breakers_main",
-    "ref_cards": [
-      {
-        "img": "wall-breakers.png",
-        "name_zh": "攻城炸弹人"
-      }
-    ],
-    "value": 330,
-    "type": "hp"
-  },
-  {
-    "name": "wall_breakers_ev_main",
-    "ref_cards": [
-      {
-        "img": "wall-breakers-ev.png",
-        "name_zh": "进化炸弹人"
-      }
-    ],
-    "value": 330,
-    "type": "hp"
+    "name": "wall_breakers_ev",
+    "display_name": "进化炸弹人",
+    "hp": 330,
+    "damage": 350,
+    "img": "wall-breakers-ev.png",
+    "comment": ""
   },
   {
     "name": "mighty_miner_bomb",
-    "ref_cards": [
-      {
-        "img": "mighty-miner.png",
-        "comment_en": "explosion",
-        "name_zh": "威猛矿工",
-        "comment_zh": "炸弹"
-      }
-    ],
-    "value": 332,
-    "type": "damage"
+    "display_name": "威猛矿工",
+    "hp": 2250,
+    "damage": 332,
+    "img": "mighty-miner.png",
+    "comment": "炸弹"
   },
   {
-    "name": "electro_wizard_main",
-    "ref_cards": [
-      {
-        "img": "electro-wizard.png",
-        "name_zh": "闪电法师"
-      }
-    ],
-    "value": 334,
-    "type": "damage"
+    "name": "electro_wizard",
+    "display_name": "闪电法师",
+    "hp": 714,
+    "damage": 234,
+    "img": "electro-wizard.png",
+    "comment": ""
   },
   {
     "name": "golden_knight_dash",
-    "ref_cards": [
-      {
-        "img": "golden-knight.png",
-        "comment_en": "dash",
-        "name_zh": "黄金圣骑",
-        "comment_zh": "冲刺"
-      }
-    ],
-    "value": 335,
-    "type": "damage"
-  },
-  {
-    "name": "archers_ev_power_shot_total",
-    "ref_cards": [
-      {
-        "img": "archers-ev.png",
-        "comment_en": "2 hits (power shot)",
-        "name_zh": "进化弓箭",
-        "comment_zh": "强击（2个）"
-      }
-    ],
-    "value": 336,
-    "type": "damage"
+    "display_name": "黄金圣骑",
+    "hp": 1799,
+    "damage": 335,
+    "img": "golden-knight.png",
+    "comment": "突袭"
   },
   {
     "name": "goblin_cage_revenge",
-    "ref_cards": [
-      {
-        "img": "goblin-cage.png",
-        "comment_en": "goblin brawler",
-        "name_zh": "哥布林牢笼",
-        "comment_zh": "硬汉"
-      }
-    ],
-    "value": 337,
-    "type": "damage"
+    "display_name": "哥布林牢笼",
+    "hp": 1080,
+    "damage": 337,
+    "img": "goblin-cage.png",
+    "comment": "硬汉"
   },
   {
     "name": "goblin_cage_ev_catch_per_hit",
-    "ref_cards": [
-      {
-        "img": "goblin-cage-ev.png",
-        "comment_en": "capture per hit",
-        "name_zh": "进化牢笼",
-        "comment_zh": "捕获每击"
-      }
-    ],
-    "value": 337,
-    "type": "damage"
+    "display_name": "进化牢笼",
+    "hp": 780,
+    "damage": 337,
+    "img": "goblin-cage-ev.png",
+    "comment": "捕获每击"
   },
   {
     "name": "void_max_one",
-    "ref_cards": [
-      {
-        "img": "void.png",
-        "comment_en": "1 hit (1 target)",
-        "name_zh": "虚空法术",
-        "comment_zh": "1击（1个）"
-      }
-    ],
-    "value": 340,
-    "type": "damage"
+    "display_name": "虚空法术",
+    "hp": 0,
+    "damage": 340,
+    "img": "void.png",
+    "comment": "1击（1个）"
   },
   {
-    "name": "wall_breakers_main",
-    "ref_cards": [
-      {
-        "img": "wall-breakers.png",
-        "name_zh": "攻城炸弹人"
-      }
-    ],
-    "value": 350,
-    "type": "damage"
-  },
-  {
-    "name": "wall_breakers_ev_main",
-    "ref_cards": [
-      {
-        "img": "wall-breakers-ev.png",
-        "name_zh": "进化炸弹人"
-      }
-    ],
-    "value": 350,
-    "type": "damage"
-  },
-  {
-    "name": "zappies_total",
-    "ref_cards": [
-      {
-        "img": "zappies.png",
-        "comment_en": "3 hit",
-        "name_zh": "电击车小队",
-        "comment_zh": "3个"
-      }
-    ],
-    "value": 351,
-    "type": "damage"
-  },
-  {
-    "name": "executioner_main",
-    "ref_cards": [
-      {
-        "img": "executioner.png",
-        "comment_en": "2 hit",
-        "name_zh": "飞斧屠夫",
-        "comment_zh": "来回2击"
-      }
-    ],
-    "value": 358,
-    "type": "damage"
-  },
-  {
-    "name": "elixir_golem_small",
-    "ref_cards": [
-      {
-        "img": "elixir-golem.png",
-        "comment_en": "blob",
-        "name_zh": "圣水戈仑",
-        "comment_zh": "小泡泡"
-      }
-    ],
-    "value": 360,
-    "type": "hp"
+    "name": "executioner",
+    "display_name": "飞斧屠夫",
+    "hp": 1280,
+    "damage": 358,
+    "img": "executioner.png",
+    "comment": "来回2击179*2"
   },
   {
     "name": "arrows_total",
-    "ref_cards": [
-      {
-        "img": "arrows.png",
-        "comment_en": "total",
-        "name_zh": "万箭齐发",
-        "comment_zh": "总伤"
-      }
-    ],
-    "value": 366,
-    "type": "damage"
+    "display_name": "万箭齐发",
+    "hp": 0,
+    "damage": 366,
+    "img": "arrows.png",
+    "comment": "总伤122*3"
   },
   {
-    "name": "elite_barbarians_main",
-    "ref_cards": [
-      {
-        "img": "elite-barbarians.png",
-        "name_zh": "精锐野蛮人"
-      }
-    ],
-    "value": 384,
-    "type": "damage"
+    "name": "elite_barbarians",
+    "display_name": "精锐野蛮人",
+    "hp": 1341,
+    "damage": 384,
+    "img": "elite-barbarians.png",
+    "comment": ""
   },
   {
     "name": "zap_ev_total",
-    "ref_cards": [
-      {
-        "img": "zap-ev.png",
-        "comment_en": "2 hits",
-        "name_zh": "进化小电",
-        "comment_zh": "2击"
-      }
-    ],
-    "value": 384,
-    "type": "damage"
+    "display_name": "进化小电",
+    "hp": 0,
+    "damage": 384,
+    "img": "zap-ev.png",
+    "comment": "2击192*2"
   },
   {
     "name": "bandit_dash",
-    "ref_cards": [
-      {
-        "img": "bandit.png",
-        "comment_en": "dash",
-        "name_zh": "刺客",
-        "comment_zh": "冲锋"
-      }
-    ],
-    "value": 389,
-    "type": "damage"
+    "display_name": "刺客",
+    "hp": 906,
+    "damage": 389,
+    "img": "bandit.png",
+    "comment": "突袭"
   },
   {
-    "name": "prince_main",
-    "ref_cards": [
-      {
-        "img": "prince.png",
-        "name_zh": "王子"
-      }
-    ],
-    "value": 391,
-    "type": "damage"
+    "name": "prince",
+    "display_name": "王子",
+    "hp": 1920,
+    "damage": 391,
+    "img": "prince.png",
+    "comment": ""
   },
   {
     "name": "musketeer_ev_snipe",
-    "ref_cards": [
-      {
-        "img": "musketeer-ev.png",
-        "comment_en": "1 hit (sniper)",
-        "name_zh": "进化火枪",
-        "comment_zh": "狙击1次"
-      }
-    ],
-    "value": 391,
-    "type": "damage"
+    "display_name": "进化火枪",
+    "hp": 721,
+    "damage": 391,
+    "img": "musketeer-ev.png",
+    "comment": "狙击1次"
   },
   {
     "name": "goblin_demolisher_death",
-    "ref_cards": [
-      {
-        "img": "goblin-demolisher.png",
-        "comment_en": "death",
-        "name_zh": "哥布林爆破手",
-        "comment_zh": "亡语"
-      }
-    ],
-    "value": 404,
-    "type": "damage"
+    "display_name": "哥布林爆破手",
+    "hp": 650,
+    "damage": 404,
+    "img": "goblin-demolisher.png",
+    "comment": "亡语"
   },
   {
     "name": "mega_minion_hero_warp",
-    "ref_cards": [
-      {
-        "img": "mega-minion-hero.png",
-        "comment_en": "warp",
-        "name_zh": "英雄铁苍",
-        "comment_zh": "传送"
-      }
-    ],
-    "value": 412,
-    "type": "damage"
+    "display_name": "英雄铁苍",
+    "hp": 837,
+    "damage": 412,
+    "img": "mega-minion-hero.png",
+    "comment": "传送"
   },
   {
     "name": "mega_knight_appear",
-    "ref_cards": [
-      {
-        "img": "mega-knight.png",
-        "comment_en": "spawn",
-        "name_zh": "超级骑士",
-        "comment_zh": "登场"
-      }
-    ],
-    "value": 430,
-    "type": "damage"
+    "display_name": "超级骑士",
+    "hp": 3993,
+    "damage": 430,
+    "img": "mega-knight.png",
+    "comment": "登场"
   },
   {
-    "name": "royal_delivery_main",
-    "ref_cards": [
-      {
-        "img": "royal-delivery.png",
-        "name_zh": "皇家速递"
-      }
-    ],
-    "value": 437,
-    "type": "damage"
-  },
-  {
-    "name": "skeleton_barrel_ev_death_two",
-    "ref_cards": [
-      {
-        "img": "skeleton-barrel-ev.png",
-        "comment_en": "2 hits (death)",
-        "name_zh": "进化骨球",
-        "comment_zh": "2次亡语"
-      }
-    ],
-    "value": 440,
-    "type": "damage"
+    "name": "royal_delivery",
+    "display_name": "皇家速递",
+    "hp": 0,
+    "damage": 437,
+    "img": "royal-delivery.png",
+    "comment": ""
   },
   {
     "name": "void_middle_all",
-    "ref_cards": [
-      {
-        "img": "void.png",
-        "comment_en": "3 hits (2-4 target)",
-        "name_zh": "虚空法术",
-        "comment_zh": "3击（2-4个）"
-      }
-    ],
-    "value": 480,
-    "type": "damage"
+    "display_name": "虚空法术",
+    "hp": 0,
+    "damage": 480,
+    "img": "void.png",
+    "comment": "3击（2-4个）"
   },
   {
     "name": "boss_bandit_dash",
-    "ref_cards": [
-      {
-        "img": "boss-bandit.png",
-        "comment_en": "dash",
-        "name_zh": "刺客首领",
-        "comment_zh": "冲刺"
-      }
-    ],
-    "value": 491,
-    "type": "damage"
+    "display_name": "刺客首领",
+    "hp": 2624,
+    "damage": 491,
+    "img": "boss-bandit.png",
+    "comment": "突袭"
   },
   {
     "name": "ram_rider_dash",
-    "ref_cards": [
-      {
-        "img": "ram-rider.png",
-        "comment_en": "charge",
-        "name_zh": "蛮羊骑士",
-        "comment_zh": "冲锋"
-      }
-    ],
-    "value": 501,
-    "type": "damage"
+    "display_name": "蛮羊骑士",
+    "hp": 1697,
+    "damage": 501,
+    "img": "ram-rider.png",
+    "comment": "冲锋"
   },
   {
-    "name": "tombstone_main",
-    "ref_cards": [
-      {
-        "img": "tombstone.png",
-        "name_zh": "骷髅墓碑"
-      }
-    ],
-    "value": 529,
-    "type": "hp"
-  },
-  {
-    "name": "zappies_main",
-    "ref_cards": [
-      {
-        "img": "zappies.png",
-        "name_zh": "电击车小队"
-      }
-    ],
-    "value": 529,
-    "type": "hp"
-  },
-  {
-    "name": "magic_archer_main",
-    "ref_cards": [
-      {
-        "img": "magic-archer.png",
-        "name_zh": "神箭游侠"
-      }
-    ],
-    "value": 529,
-    "type": "hp"
-  },
-  {
-    "name": "mother_witch_main",
-    "ref_cards": [
-      {
-        "img": "mother-witch.png",
-        "name_zh": "女巫婆婆"
-      }
-    ],
-    "value": 529,
-    "type": "hp"
-  },
-  {
-    "name": "skeleton_barrel_main",
-    "ref_cards": [
-      {
-        "img": "skeleton-barrel.png",
-        "name_zh": "骷髅气球"
-      }
-    ],
-    "value": 532,
-    "type": "hp"
+    "name": "tombstone",
+    "display_name": "骷髅墓碑",
+    "hp": 529,
+    "damage": 0,
+    "img": "tombstone.png",
+    "comment": ""
   },
   {
     "name": "dark_prince_dash",
-    "ref_cards": [
-      {
-        "img": "dark-prince.png",
-        "comment_en": "charge",
-        "name_zh": "黑暗王子",
-        "comment_zh": "冲锋"
-      }
-    ],
-    "value": 532,
-    "type": "damage"
+    "display_name": "黑暗王子",
+    "hp": 1200,
+    "damage": 532,
+    "img": "dark-prince.png",
+    "comment": "冲锋"
   },
   {
     "name": "giant_skeleton_bomb",
-    "ref_cards": [
-      {
-        "img": "giant-skeleton.png",
-        "comment_en": "death",
-        "name_zh": "骷髅巨人",
-        "comment_zh": "亡语"
-      }
-    ],
-    "value": 535,
-    "type": "damage"
+    "display_name": "骷髅巨人",
+    "hp": 3617,
+    "damage": 535,
+    "img": "giant-skeleton.png",
+    "comment": "亡语"
   },
   {
     "name": "mega_knight_jump",
-    "ref_cards": [
-      {
-        "img": "mega-knight.png",
-        "comment_en": "jump",
-        "name_zh": "超级骑士",
-        "comment_zh": "跃击"
-      }
-    ],
-    "value": 537,
-    "type": "damage"
-  },
-  {
-    "name": "royal_recruits_main",
-    "ref_cards": [
-      {
-        "img": "royal-recruits.png",
-        "name_zh": "皇家卫队"
-      }
-    ],
-    "value": 547,
-    "type": "hp"
-  },
-  {
-    "name": "skeleton_dragons_main",
-    "ref_cards": [
-      {
-        "img": "skeleton-dragons.png",
-        "name_zh": "骷髅飞龙"
-      }
-    ],
-    "value": 560,
-    "type": "hp"
+    "display_name": "超级骑士",
+    "hp": 3993,
+    "damage": 537,
+    "img": "mega-knight.png",
+    "comment": "跃击"
   },
   {
     "name": "battle_ram_dash",
-    "ref_cards": [
-      {
-        "img": "battle-ram.png",
-        "comment_en": "charge",
-        "name_zh": "野蛮人攻城锤",
-        "comment_zh": "冲锋"
-      }
-    ],
-    "value": 573,
-    "type": "damage"
-  },
-  {
-    "name": "three_musketeers_total",
-    "ref_cards": [
-      {
-        "img": "three-musketeers.png",
-        "comment_en": "3 units total",
-        "name_zh": "三个火枪手",
-        "comment_zh": "3个"
-      }
-    ],
-    "value": 612,
-    "type": "damage"
-  },
-  {
-    "name": "flying_machine_main",
-    "ref_cards": [
-      {
-        "img": "flying-machine.png",
-        "name_zh": "飞行器"
-      }
-    ],
-    "value": 614,
-    "type": "hp"
+    "display_name": "野蛮人攻城锤",
+    "hp": 967,
+    "damage": 573,
+    "img": "battle-ram.png",
+    "comment": "冲锋"
   },
   {
     "name": "magic_archer_hero_dummy",
-    "ref_cards": [
-      {
-        "img": "magic-archer-hero.png",
-        "comment_en": "dummy",
-        "name_zh": "英雄游侠",
-        "comment_zh": "替身"
-      }
-    ],
-    "value": 627,
-    "type": "hp"
+    "display_name": "英雄游侠",
+    "hp": 627,
+    "damage": 0,
+    "img": "magic-archer-hero.png",
+    "comment": "替身"
   },
   {
-    "name": "balloon_main",
-    "ref_cards": [
-      {
-        "img": "balloon.png",
-        "name_zh": "气球兵"
-      }
-    ],
-    "value": 640,
-    "type": "damage"
+    "name": "balloon",
+    "display_name": "气球兵",
+    "hp": 1676,
+    "damage": 640,
+    "img": "balloon.png",
+    "comment": ""
   },
   {
-    "name": "skeleton_barrel_ev_main",
-    "ref_cards": [
-      {
-        "img": "skeleton-barrel-ev.png",
-        "name_zh": "进化骨球"
-      }
-    ],
-    "value": 665,
-    "type": "hp"
+    "name": "skeleton_barrel_ev",
+    "display_name": "进化骨球",
+    "hp": 665,
+    "damage": 220,
+    "img": "skeleton-barrel-ev.png",
+    "comment": "亡语"
   },
   {
     "name": "void_max_two",
-    "ref_cards": [
-      {
-        "img": "void.png",
-        "comment_en": "2 hits (1 target)",
-        "name_zh": "虚空法术",
-        "comment_zh": "2击（1个）"
-      }
-    ],
-    "value": 680,
-    "type": "damage"
+    "display_name": "虚空法术",
+    "hp": 0,
+    "damage": 680,
+    "img": "void.png",
+    "comment": "2击（1个）"
   },
   {
-    "name": "ice_wizard_main",
-    "ref_cards": [
-      {
-        "img": "ice-wizard.png",
-        "name_zh": "寒冰法师"
-      }
-    ],
-    "value": 688,
-    "type": "hp"
-  },
-  {
-    "name": "fireball_main",
-    "ref_cards": [
-      {
-        "img": "fireball.png",
-        "name_zh": "火球"
-      }
-    ],
-    "value": 688,
-    "type": "damage"
-  },
-  {
-    "name": "barbarians_main",
-    "ref_cards": [
-      {
-        "img": "barbarians.png",
-        "name_zh": "野蛮人"
-      }
-    ],
-    "value": 691,
-    "type": "hp"
-  },
-  {
-    "name": "little_prince_main",
-    "ref_cards": [
-      {
-        "img": "little-prince.png",
-        "name_zh": "小王子"
-      }
-    ],
-    "value": 698,
-    "type": "hp"
-  },
-  {
-    "name": "electro_wizard_main",
-    "ref_cards": [
-      {
-        "img": "electro-wizard.png",
-        "name_zh": "闪电法师"
-      }
-    ],
-    "value": 714,
-    "type": "hp"
-  },
-  {
-    "name": "musketeer_main",
-    "ref_cards": [
-      {
-        "img": "musketeer.png",
-        "name_zh": "火枪手"
-      }
-    ],
-    "value": 721,
-    "type": "hp"
-  },
-  {
-    "name": "goblinstein_doctor",
-    "ref_cards": [
-      {
-        "img": "goblinstein.png",
-        "comment_en": "doctor",
-        "name_zh": "哥布林斯坦",
-        "comment_zh": "博士"
-      }
-    ],
-    "value": 721,
-    "type": "hp"
-  },
-  {
-    "name": "furnace_main",
-    "ref_cards": [
-      {
-        "img": "furnace.png",
-        "name_zh": "烈焰熔炉"
-      }
-    ],
-    "value": 727,
-    "type": "hp"
+    "name": "fireball",
+    "display_name": "火球",
+    "hp": 0,
+    "damage": 688,
+    "img": "fireball.png",
+    "comment": ""
   },
   {
     "name": "poison_total",
-    "ref_cards": [
-      {
-        "img": "poison.png",
-        "comment_en": "total",
-        "name_zh": "毒药法术",
-        "comment_zh": "总伤"
-      }
-    ],
-    "value": 736,
-    "type": "damage"
+    "display_name": "毒药法术",
+    "hp": 0,
+    "damage": 736,
+    "img": "poison.png",
+    "comment": "总伤92*8"
   },
   {
-    "name": "barbarians_ev_main",
-    "ref_cards": [
-      {
-        "img": "barbarians-ev.png",
-        "name_zh": "进化黄毛"
-      }
-    ],
-    "value": 737,
-    "type": "hp"
-  },
-  {
-    "name": "wizard_main",
-    "ref_cards": [
-      {
-        "img": "wizard.png",
-        "name_zh": "法师"
-      }
-    ],
-    "value": 755,
-    "type": "hp"
-  },
-  {
-    "name": "mini_pekka_main",
-    "ref_cards": [
-      {
-        "img": "mini-pekka.png",
-        "name_zh": "迷你皮卡"
-      }
-    ],
-    "value": 755,
-    "type": "damage"
-  },
-  {
-    "name": "elixir_golem_middle",
-    "ref_cards": [
-      {
-        "img": "elixir-golem.png",
-        "comment_en": "golemite",
-        "name_zh": "圣水戈仑",
-        "comment_zh": "中泡泡"
-      }
-    ],
-    "value": 762,
-    "type": "hp"
+    "name": "mini_pekka",
+    "display_name": "迷你皮卡",
+    "hp": 1390,
+    "damage": 755,
+    "img": "mini-pekka.png",
+    "comment": ""
   },
   {
     "name": "knight_hero_shield",
-    "ref_cards": [
-      {
-        "img": "knight-hero.png",
-        "comment_en": "shield",
-        "name_zh": "英雄骑士",
-        "comment_zh": "护盾"
-      }
-    ],
-    "value": 768,
-    "type": "hp"
+    "display_name": "英雄骑士",
+    "hp": 768,
+    "damage": 0,
+    "img": "knight-hero.png",
+    "comment": "护盾"
   },
   {
-    "name": "elite_barbarians_total",
-    "ref_cards": [
-      {
-        "img": "elite-barbarians.png",
-        "comment_en": "2 units total",
-        "name_zh": "精锐野蛮人",
-        "comment_zh": "2个"
-      }
-    ],
-    "value": 768,
-    "type": "damage"
-  },
-  {
-    "name": "goblin_cage_main",
-    "ref_cards": [
-      {
-        "img": "goblin-cage.png",
-        "name_zh": "哥布林牢笼"
-      }
-    ],
-    "value": 780,
-    "type": "hp"
-  },
-  {
-    "name": "goblin_cage_ev_main",
-    "ref_cards": [
-      {
-        "img": "goblin-cage-ev.png",
-        "name_zh": "进化牢笼"
-      }
-    ],
-    "value": 780,
-    "type": "hp"
+    "name": "goblin_cage",
+    "display_name": "哥布林牢笼",
+    "hp": 780,
+    "damage": 0,
+    "img": "goblin-cage.png",
+    "comment": ""
   },
   {
     "name": "musketeer_ev_snipe_two",
-    "ref_cards": [
-      {
-        "img": "musketeer-ev.png",
-        "comment_en": "2 hits (sniper)",
-        "name_zh": "进化火枪",
-        "comment_zh": "狙击2次"
-      }
-    ],
-    "value": 782,
-    "type": "damage"
+    "display_name": "进化火枪",
+    "hp": 721,
+    "damage": 782,
+    "img": "musketeer-ev.png",
+    "comment": "狙击2次391*2"
   },
   {
     "name": "prince_dash",
-    "ref_cards": [
-      {
-        "img": "prince.png",
-        "comment_en": "charge",
-        "name_zh": "王子",
-        "comment_zh": "冲锋"
-      }
-    ],
-    "value": 783,
-    "type": "damage"
+    "display_name": "王子",
+    "hp": 1920,
+    "damage": 783,
+    "img": "prince.png",
+    "comment": "冲锋"
   },
   {
-    "name": "pekka_main",
-    "ref_cards": [
-      {
-        "img": "pekka.png",
-        "name_zh": "皮卡超人"
-      }
-    ],
-    "value": 816,
-    "type": "damage"
-  },
-  {
-    "name": "cannon_main",
-    "ref_cards": [
-      {
-        "img": "cannon.png",
-        "name_zh": "加农炮"
-      }
-    ],
-    "value": 824,
-    "type": "hp"
-  },
-  {
-    "name": "mega_minion_main",
-    "ref_cards": [
-      {
-        "img": "mega-minion.png",
-        "name_zh": "重甲亡灵"
-      }
-    ],
-    "value": 837,
-    "type": "hp"
-  },
-  {
-    "name": "royal_hogs_main",
-    "ref_cards": [
-      {
-        "img": "royal-hogs.png",
-        "name_zh": "皇家野猪"
-      }
-    ],
-    "value": 837,
-    "type": "hp"
-  },
-  {
-    "name": "witch_main",
-    "ref_cards": [
-      {
-        "img": "witch.png",
-        "name_zh": "女巫"
-      }
-    ],
-    "value": 839,
-    "type": "hp"
+    "name": "pekka",
+    "display_name": "皮卡超人",
+    "hp": 3760,
+    "damage": 816,
+    "img": "pekka.png",
+    "comment": ""
   },
   {
     "name": "hunter_total",
-    "ref_cards": [
-      {
-        "img": "hunter.png",
-        "comment_en": "all pallets hit",
-        "name_zh": "猎人",
-        "comment_zh": "10弹全中"
-      }
-    ],
-    "value": 840,
-    "type": "damage"
+    "display_name": "猎人",
+    "hp": 885,
+    "damage": 840,
+    "img": "hunter.png",
+    "comment": "10弹全中84*10"
   },
   {
     "name": "goblinstein_skill_total",
-    "ref_cards": [
-      {
-        "img": "goblinstein.png",
-        "comment_en": "ability total",
-        "name_zh": "哥布林斯坦",
-        "comment_zh": "技能总伤"
-      }
-    ],
-    "value": 856,
-    "type": "damage"
-  },
-  {
-    "name": "fisherman_main",
-    "ref_cards": [
-      {
-        "img": "fisherman.png",
-        "name_zh": "渔夫"
-      }
-    ],
-    "value": 870,
-    "type": "hp"
-  },
-  {
-    "name": "three_musketeers_main",
-    "ref_cards": [
-      {
-        "img": "three-musketeers.png",
-        "name_zh": "三个火枪手"
-      }
-    ],
-    "value": 883,
-    "type": "hp"
-  },
-  {
-    "name": "hunter_main",
-    "ref_cards": [
-      {
-        "img": "hunter.png",
-        "name_zh": "猎人"
-      }
-    ],
-    "value": 885,
-    "type": "hp"
-  },
-  {
-    "name": "berserker_main",
-    "ref_cards": [
-      {
-        "img": "berserker.png",
-        "name_zh": "狂战士"
-      }
-    ],
-    "value": 896,
-    "type": "hp"
-  },
-  {
-    "name": "bandit_main",
-    "ref_cards": [
-      {
-        "img": "bandit.png",
-        "name_zh": "刺客"
-      }
-    ],
-    "value": 906,
-    "type": "hp"
-  },
-  {
-    "name": "night_witch_main",
-    "ref_cards": [
-      {
-        "img": "night-witch.png",
-        "name_zh": "暗夜女巫"
-      }
-    ],
-    "value": 906,
-    "type": "hp"
+    "display_name": "哥布林斯坦",
+    "hp": 721,
+    "damage": 856,
+    "img": "goblinstein.png",
+    "comment": "技能总伤"
   },
   {
     "name": "barbarians_total",
-    "ref_cards": [
-      {
-        "img": "barbarians.png",
-        "comment_en": "5 units total",
-        "name_zh": "野蛮人",
-        "comment_zh": "5个"
-      }
-    ],
-    "value": 960,
-    "type": "damage"
+    "display_name": "野蛮人",
+    "hp": 691,
+    "damage": 960,
+    "img": "barbarians.png",
+    "comment": "5个总伤192*5"
   },
   {
-    "name": "battle_ram_main",
-    "ref_cards": [
-      {
-        "img": "battle-ram.png",
-        "name_zh": "野蛮人攻城锤"
-      }
-    ],
-    "value": 967,
-    "type": "hp"
-  },
-  {
-    "name": "battle_ram_ev_main",
-    "ref_cards": [
-      {
-        "img": "battle-ram-ev.png",
-        "name_zh": "进化锤子"
-      }
-    ],
-    "value": 967,
-    "type": "hp"
-  },
-  {
-    "name": "electro_dragon_main",
-    "ref_cards": [
-      {
-        "img": "electro-dragon.png",
-        "name_zh": "雷电飞龙"
-      }
-    ],
-    "value": 998,
-    "type": "hp"
-  },
-  {
-    "name": "archer_queen_main",
-    "ref_cards": [
-      {
-        "img": "archer-queen.png",
-        "name_zh": "弓箭女皇"
-      }
-    ],
-    "value": 1000,
-    "type": "hp"
+    "name": "battle_ram",
+    "display_name": "野蛮人攻城锤",
+    "hp": 967,
+    "damage": 286,
+    "img": "battle-ram.png",
+    "comment": ""
   },
   {
     "name": "void_max_all",
-    "ref_cards": [
-      {
-        "img": "void.png",
-        "comment_en": "3 hits (1 target)",
-        "name_zh": "虚空法术",
-        "comment_zh": "3击（1个）"
-      }
-    ],
-    "value": 1020,
-    "type": "damage"
+    "display_name": "虚空法术",
+    "hp": 0,
+    "damage": 1020,
+    "img": "void.png",
+    "comment": "3击（1个）"
   },
   {
     "name": "mighty_miner_max_per_hit",
-    "ref_cards": [
-      {
-        "img": "mighty-miner.png",
-        "comment_en": "max per hit",
-        "name_zh": "威猛矿工",
-        "comment_zh": "最大每击"
-      }
-    ],
-    "value": 409,
-    "type": "damage"
+    "display_name": "威猛矿工",
+    "hp": 2250,
+    "damage": 409,
+    "img": "mighty-miner.png",
+    "comment": "最大每击"
   },
   {
-    "name": "golem_mini",
-    "ref_cards": [
-      {
-        "img": "golem.png",
-        "comment_en": "golemite",
-        "name_zh": "戈仑石人",
-        "comment_zh": "小石人"
-      }
-    ],
-    "value": 1039,
-    "type": "hp"
+    "name": "mighty_miner_min_per_hit",
+    "display_name": "威猛矿工",
+    "hp": 2250,
+    "damage": 40,
+    "img": "mighty-miner.png",
+    "comment": "最小每击"
   },
   {
     "name": "witch_ev_max",
-    "ref_cards": [
-      {
-        "img": "witch-ev.png",
-        "comment_en": "max",
-        "name_zh": "进化女巫",
-        "comment_zh": "最大血量"
-      }
-    ],
-    "value": 1040,
-    "type": "hp"
-  },
-  {
-    "name": "phoenix_main",
-    "ref_cards": [
-      {
-        "img": "phoenix.png",
-        "name_zh": "凤凰"
-      }
-    ],
-    "value": 1052,
-    "type": "hp"
+    "display_name": "进化女巫",
+    "hp": 1040,
+    "damage": 135,
+    "img": "witch-ev.png",
+    "comment": "最大血量"
   },
   {
     "name": "inferno_dragon_max_per_hit",
-    "ref_cards": [
-      {
-        "img": "inferno-dragon.png",
-        "comment_en": "max per hit",
-        "name_zh": "地狱飞龙",
-        "comment_zh": "最大每击"
-      }
-    ],
-    "value": 422,
-    "type": "damage"
+    "display_name": "地狱飞龙",
+    "hp": 1295,
+    "damage": 422,
+    "img": "inferno-dragon.png",
+    "comment": "最大每击"
   },
   {
     "name": "inferno_dragon_ev_max_per_hit",
-    "ref_cards": [
-      {
-        "img": "inferno-dragon-ev.png",
-        "comment_en": "max per hit",
-        "name_zh": "进化地狱龙",
-        "comment_zh": "最大每击"
-      }
-    ],
-    "value": 844,
-    "type": "damage"
+    "display_name": "进化地狱龙",
+    "hp": 1295,
+    "damage": 844,
+    "img": "inferno-dragon-ev.png",
+    "comment": "最大每击"
   },
   {
-    "name": "lightning_main",
-    "ref_cards": [
-      {
-        "img": "lightning.png",
-        "name_zh": "雷电法术"
-      }
-    ],
-    "value": 1057,
-    "type": "damage"
+    "name": "lightning",
+    "display_name": "雷电法术",
+    "hp": 0,
+    "damage": 1057,
+    "img": "lightning.png",
+    "comment": ""
   },
   {
-    "name": "elixir_collector_main",
-    "ref_cards": [
-      {
-        "img": "elixir-collector.png",
-        "name_zh": "采集器"
-      }
-    ],
-    "value": 1070,
-    "type": "hp"
+    "name": "elixir_collector",
+    "display_name": "采集器",
+    "hp": 1070,
+    "damage": 0,
+    "img": "elixir-collector.png",
+    "comment": ""
   },
   {
-    "name": "goblin_cage_revenge",
-    "ref_cards": [
-      {
-        "img": "goblin-cage.png",
-        "comment_en": "goblin brawler",
-        "name_zh": "哥布林牢笼",
-        "comment_zh": "硬汉"
-      }
-    ],
-    "value": 1080,
-    "type": "hp"
-  },
-  {
-    "name": "baby_dragon_main",
-    "ref_cards": [
-      {
-        "img": "baby-dragon.png",
-        "name_zh": "飞龙宝宝"
-      }
-    ],
-    "value": 1152,
-    "type": "hp"
-  },
-  {
-    "name": "tesla_main",
-    "ref_cards": [
-      {
-        "img": "tesla.png",
-        "name_zh": "特斯拉电磁塔"
-      }
-    ],
-    "value": 1152,
-    "type": "hp"
-  },
-  {
-    "name": "spirit_empress_walker",
-    "ref_cards": [
-      {
-        "img": "spirit-empress.png",
-        "comment_en": "3 elixir",
-        "name_zh": "精灵女王",
-        "comment_zh": "地面形态"
-      }
-    ],
-    "value": 1152,
-    "type": "hp"
-  },
-  {
-    "name": "barbarian_hut_main",
-    "ref_cards": [
-      {
-        "img": "barbarian-hut.png",
-        "name_zh": "野蛮人小屋"
-      }
-    ],
-    "value": 1164,
-    "type": "hp"
+    "name": "barbarian_hut",
+    "display_name": "野蛮人小屋",
+    "hp": 1164,
+    "damage": 0,
+    "img": "barbarian-hut.png",
+    "comment": ""
   },
   {
     "name": "musketeer_ev_snipe_total",
-    "ref_cards": [
-      {
-        "img": "musketeer-ev.png",
-        "comment_en": "3 hits (sniper)",
-        "name_zh": "进化火枪",
-        "comment_zh": "狙击3次"
-      }
-    ],
-    "value": 1173,
-    "type": "damage"
+    "display_name": "进化火枪",
+    "hp": 721,
+    "damage": 1173,
+    "img": "musketeer-ev.png",
+    "comment": "狙击3次391*3"
   },
   {
-    "name": "spirit_empress_flying",
-    "ref_cards": [
-      {
-        "img": "spirit-empress.png",
-        "comment_en": "6 elixir",
-        "name_zh": "精灵女王",
-        "comment_zh": "空中形态"
-      }
-    ],
-    "value": 1177,
-    "type": "hp"
+    "name": "goblin_hut",
+    "display_name": "哥布林小屋",
+    "hp": 1180,
+    "damage": 0,
+    "img": "goblin-hut.png",
+    "comment": ""
   },
   {
-    "name": "goblin_hut_main",
-    "ref_cards": [
-      {
-        "img": "goblin-hut.png",
-        "name_zh": "哥布林小屋"
-      }
-    ],
-    "value": 1180,
-    "type": "hp"
+    "name": "sparky",
+    "display_name": "电磁炮",
+    "hp": 1451,
+    "damage": 1331,
+    "img": "sparky.png",
+    "comment": ""
   },
   {
-    "name": "dark_prince_main",
-    "ref_cards": [
-      {
-        "img": "dark-prince.png",
-        "name_zh": "黑暗王子"
-      }
-    ],
-    "value": 1200,
-    "type": "hp"
-  },
-  {
-    "name": "miner_main",
-    "ref_cards": [
-      {
-        "img": "miner.png",
-        "name_zh": "掘地矿工"
-      }
-    ],
-    "value": 1210,
-    "type": "hp"
-  },
-  {
-    "name": "royal_ghost_main",
-    "ref_cards": [
-      {
-        "img": "royal-ghost.png",
-        "name_zh": "幽灵"
-      }
-    ],
-    "value": 1210,
-    "type": "hp"
-  },
-  {
-    "name": "royal_ghost_ev_main",
-    "ref_cards": [
-      {
-        "img": "royal-ghost-ev.png",
-        "name_zh": "进化幽灵"
-      }
-    ],
-    "value": 1210,
-    "type": "hp"
-  },
-  {
-    "name": "executioner_main",
-    "ref_cards": [
-      {
-        "img": "executioner.png",
-        "name_zh": "飞斧屠夫"
-      }
-    ],
-    "value": 1280,
-    "type": "hp"
-  },
-  {
-    "name": "lumberjack_main",
-    "ref_cards": [
-      {
-        "img": "lumberjack.png",
-        "name_zh": "狂暴樵夫"
-      }
-    ],
-    "value": 1282,
-    "type": "hp"
-  },
-  {
-    "name": "inferno_dragon_main",
-    "ref_cards": [
-      {
-        "img": "inferno-dragon.png",
-        "name_zh": "地狱飞龙"
-      }
-    ],
-    "value": 1295,
-    "type": "hp"
-  },
-  {
-    "name": "goblin_demolisher_main",
-    "ref_cards": [
-      {
-        "img": "goblin-demolisher.png",
-        "name_zh": "哥布林爆破手"
-      }
-    ],
-    "value": 1300,
-    "type": "hp"
-  },
-  {
-    "name": "goblin_drill_main",
-    "ref_cards": [
-      {
-        "img": "goblin-drill.png",
-        "name_zh": "哥布林钻机"
-      }
-    ],
-    "value": 1313,
-    "type": "hp"
-  },
-  {
-    "name": "ice_golem_main",
-    "ref_cards": [
-      {
-        "img": "ice-golem.png",
-        "name_zh": "戈仑冰人"
-      }
-    ],
-    "value": 1315,
-    "type": "hp"
-  },
-  {
-    "name": "sparky_main",
-    "ref_cards": [
-      {
-        "img": "sparky.png",
-        "name_zh": "电磁炮"
-      }
-    ],
-    "value": 1331,
-    "type": "damage"
-  },
-  {
-    "name": "elite_barbarians_main",
-    "ref_cards": [
-      {
-        "img": "elite-barbarians.png",
-        "name_zh": "精锐野蛮人"
-      }
-    ],
-    "value": 1341,
-    "type": "hp"
-  },
-  {
-    "name": "bomb_tower_main",
-    "ref_cards": [
-      {
-        "img": "bomb-tower.png",
-        "name_zh": "炸弹塔"
-      }
-    ],
-    "value": 1356,
-    "type": "hp"
-  },
-  {
-    "name": "mortar_main",
-    "ref_cards": [
-      {
-        "img": "mortar.png",
-        "name_zh": "迫击炮"
-      }
-    ],
-    "value": 1369,
-    "type": "hp"
-  },
-  {
-    "name": "mini_pekka_main",
-    "ref_cards": [
-      {
-        "img": "mini-pekka.png",
-        "name_zh": "迷你皮卡"
-      }
-    ],
-    "value": 1390,
-    "type": "hp"
-  },
-  {
-    "name": "sparky_main",
-    "ref_cards": [
-      {
-        "img": "sparky.png",
-        "name_zh": "电磁炮"
-      }
-    ],
-    "value": 1451,
-    "type": "hp"
-  },
-  {
-    "name": "rocket_main",
-    "ref_cards": [
-      {
-        "img": "rocket.png",
-        "name_zh": "火箭"
-      }
-    ],
-    "value": 1484,
-    "type": "damage"
-  },
-  {
-    "name": "musketeer_hero_cannon",
-    "ref_cards": [
-      {
-        "img": "musketeer-hero.png",
-        "comment_en": "turret",
-        "name_zh": "英雄火枪",
-        "comment_zh": "炮台"
-      }
-    ],
-    "value": 1536,
-    "type": "hp"
-  },
-  {
-    "name": "elixir_golem_big",
-    "ref_cards": [
-      {
-        "img": "elixir-golem.png",
-        "comment_en": "big",
-        "name_zh": "圣水戈仑",
-        "comment_zh": "大泡泡"
-      }
-    ],
-    "value": 1569,
-    "type": "hp"
-  },
-  {
-    "name": "little_prince_guardian",
-    "ref_cards": [
-      {
-        "img": "little-prince.png",
-        "comment_en": "guardian",
-        "name_zh": "小王子",
-        "comment_zh": "护卫"
-      }
-    ],
-    "value": 1600,
-    "type": "hp"
-  },
-  {
-    "name": "x_bow_main",
-    "ref_cards": [
-      {
-        "img": "x-bow.png",
-        "name_zh": "X连弩"
-      }
-    ],
-    "value": 1600,
-    "type": "hp"
-  },
-  {
-    "name": "balloon_main",
-    "ref_cards": [
-      {
-        "img": "balloon.png",
-        "name_zh": "气球兵"
-      }
-    ],
-    "value": 1676,
-    "type": "hp"
-  },
-  {
-    "name": "hog_rider_main",
-    "ref_cards": [
-      {
-        "img": "hog-rider.png",
-        "name_zh": "野猪骑士"
-      }
-    ],
-    "value": 1697,
-    "type": "hp"
-  },
-  {
-    "name": "ram_rider_main",
-    "ref_cards": [
-      {
-        "img": "ram-rider.png",
-        "name_zh": "蛮羊骑士"
-      }
-    ],
-    "value": 1697,
-    "type": "hp"
-  },
-  {
-    "name": "battle_healer_main",
-    "ref_cards": [
-      {
-        "img": "battle-healer.png",
-        "name_zh": "战斗天使"
-      }
-    ],
-    "value": 1717,
-    "type": "hp"
-  },
-  {
-    "name": "inferno_tower_main",
-    "ref_cards": [
-      {
-        "img": "inferno-tower.png",
-        "name_zh": "地狱之塔"
-      }
-    ],
-    "value": 1748,
-    "type": "hp"
-  },
-  {
-    "name": "knight_main",
-    "ref_cards": [
-      {
-        "img": "knight.png",
-        "name_zh": "骑士"
-      }
-    ],
-    "value": 1766,
-    "type": "hp"
-  },
-  {
-    "name": "golden_knight_main",
-    "ref_cards": [
-      {
-        "img": "golden-knight.png",
-        "name_zh": "黄金圣骑"
-      }
-    ],
-    "value": 1799,
-    "type": "hp"
-  },
-  {
-    "name": "cannon_cart_main",
-    "ref_cards": [
-      {
-        "img": "cannon-cart.png",
-        "name_zh": "加农炮战车"
-      }
-    ],
-    "value": 1809,
-    "type": "hp"
-  },
-  {
-    "name": "valkyrie_main",
-    "ref_cards": [
-      {
-        "img": "valkyrie.png",
-        "name_zh": "女武神"
-      }
-    ],
-    "value": 1907,
-    "type": "hp"
-  },
-  {
-    "name": "prince_main",
-    "ref_cards": [
-      {
-        "img": "prince.png",
-        "name_zh": "王子"
-      }
-    ],
-    "value": 1920,
-    "type": "hp"
-  },
-  {
-    "name": "rascals_boy",
-    "ref_cards": [
-      {
-        "img": "rascals.png",
-        "comment_en": "boy",
-        "name_zh": "绿林团伙",
-        "comment_zh": "小哥"
-      }
-    ],
-    "value": 1940,
-    "type": "hp"
-  },
-  {
-    "name": "bowler_main",
-    "ref_cards": [
-      {
-        "img": "bowler.png",
-        "name_zh": "巨石投手"
-      }
-    ],
-    "value": 2081,
-    "type": "hp"
+    "name": "rocket",
+    "display_name": "火箭",
+    "hp": 0,
+    "damage": 1484,
+    "img": "rocket.png",
+    "comment": ""
   },
   {
     "name": "inferno_tower_max_per_hit",
-    "ref_cards": [
-      {
-        "img": "inferno-tower.png",
-        "comment_en": "max per hit",
-        "name_zh": "地狱之塔",
-        "comment_zh": "最大每击"
-      }
-    ],
-    "value": 847,
-    "type": "damage"
-  },
-  {
-    "name": "goblin_machine_main",
-    "ref_cards": [
-      {
-        "img": "goblin-machine.png",
-        "name_zh": "哥布林机甲"
-      }
-    ],
-    "value": 2150,
-    "type": "hp"
-  },
-  {
-    "name": "monk_main",
-    "ref_cards": [
-      {
-        "img": "monk.png",
-        "name_zh": "盖世武僧"
-      }
-    ],
-    "value": 2214,
-    "type": "hp"
-  },
-  {
-    "name": "mighty_miner_main",
-    "ref_cards": [
-      {
-        "img": "mighty-miner.png",
-        "name_zh": "威猛矿工"
-      }
-    ],
-    "value": 2250,
-    "type": "hp"
-  },
-  {
-    "name": "skeleton_king_main",
-    "ref_cards": [
-      {
-        "img": "skeleton-king.png",
-        "name_zh": "骷髅帝王"
-      }
-    ],
-    "value": 2298,
-    "type": "hp"
-  },
-  {
-    "name": "goblinstein_monster",
-    "ref_cards": [
-      {
-        "img": "goblinstein.png",
-        "comment_en": "monster",
-        "name_zh": "哥布林斯坦",
-        "comment_zh": "怪物"
-      }
-    ],
-    "value": 2385,
-    "type": "hp"
-  },
-  {
-    "name": "cannoneer_main",
-    "ref_cards": [
-      {
-        "img": "cannoneer.png",
-        "name_zh": "加农炮手"
-      }
-    ],
-    "value": 2616,
-    "type": "hp"
-  },
-  {
-    "name": "boss_bandit_main",
-    "ref_cards": [
-      {
-        "img": "boss-bandit.png",
-        "name_zh": "刺客首领"
-      }
-    ],
-    "value": 2624,
-    "type": "hp"
-  },
-  {
-    "name": "rune_giant_main",
-    "ref_cards": [
-      {
-        "img": "rune-giant.png",
-        "name_zh": "符文巨人"
-      }
-    ],
-    "value": 2662,
-    "type": "hp"
-  },
-  {
-    "name": "royal_chef_main",
-    "ref_cards": [
-      {
-        "img": "royal-chef.png",
-        "name_zh": "皇家大厨"
-      }
-    ],
-    "value": 2703,
-    "type": "hp"
-  },
-  {
-    "name": "dagger_duchess_main",
-    "ref_cards": [
-      {
-        "img": "dagger-duchess.png",
-        "name_zh": "飞刀女爵"
-      }
-    ],
-    "value": 2768,
-    "type": "hp"
-  },
-  {
-    "name": "goblin_giant_main",
-    "ref_cards": [
-      {
-        "img": "goblin-giant.png",
-        "name_zh": "哥布林巨人"
-      }
-    ],
-    "value": 3020,
-    "type": "hp"
-  },
-  {
-    "name": "tower_princess_main",
-    "ref_cards": [
-      {
-        "img": "tower-princess.png",
-        "name_zh": "公主塔"
-      }
-    ],
-    "value": 3052,
-    "type": "hp"
-  },
-  {
-    "name": "royal_giant_main",
-    "ref_cards": [
-      {
-        "img": "royal-giant.png",
-        "name_zh": "皇家巨人"
-      }
-    ],
-    "value": 3164,
-    "type": "hp"
-  },
-  {
-    "name": "lava_hound_main",
-    "ref_cards": [
-      {
-        "img": "lava-hound.png",
-        "name_zh": "熔岩猎犬"
-      }
-    ],
-    "value": 3581,
-    "type": "hp"
-  },
-  {
-    "name": "giant_skeleton_main",
-    "ref_cards": [
-      {
-        "img": "giant-skeleton.png",
-        "name_zh": "骷髅巨人"
-      }
-    ],
-    "value": 3617,
-    "type": "hp"
-  },
-  {
-    "name": "pekka_main",
-    "ref_cards": [
-      {
-        "img": "pekka.png",
-        "name_zh": "皮卡超人"
-      }
-    ],
-    "value": 3760,
-    "type": "hp"
-  },
-  {
-    "name": "electro_giant_main",
-    "ref_cards": [
-      {
-        "img": "electro-giant.png",
-        "name_zh": "雷电巨人"
-      }
-    ],
-    "value": 3855,
-    "type": "hp"
-  },
-  {
-    "name": "giant_main",
-    "ref_cards": [
-      {
-        "img": "giant.png",
-        "name_zh": "巨人"
-      }
-    ],
-    "value": 3968,
-    "type": "hp"
-  },
-  {
-    "name": "mega_knight_main",
-    "ref_cards": [
-      {
-        "img": "mega-knight.png",
-        "name_zh": "超级骑士"
-      }
-    ],
-    "value": 3993,
-    "type": "hp"
-  },
-  {
-    "name": "golem_main",
-    "ref_cards": [
-      {
-        "img": "golem.png",
-        "name_zh": "戈仑石人"
-      }
-    ],
-    "value": 5120,
-    "type": "hp"
+    "display_name": "地狱之塔",
+    "hp": 1748,
+    "damage": 847,
+    "img": "inferno-tower.png",
+    "comment": "最大每击"
   },
   {
     "name": "pekka_ev_max",
-    "ref_cards": [
-      {
-        "img": "pekka-ev.png",
-        "comment_en": "max hp",
-        "name_zh": "进化皮卡",
-        "comment_zh": "最大血量"
-      }
-    ],
-    "value": 5640,
-    "type": "hp"
+    "display_name": "进化皮卡",
+    "hp": 5640,
+    "damage": 816,
+    "img": "pekka-ev.png",
+    "comment": "最大血量"
   }
 ]

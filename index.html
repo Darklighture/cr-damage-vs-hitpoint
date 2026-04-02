@@ -81,162 +81,71 @@
             return response.json();
         })
         .then(rawData => {
-            const dataMap = new Map();
+            // 新数据格式：每个对象直接包含 hp, damage, display_name, comment, img
+            // 直接构建 troops 和 spells，无需复杂的合并和继承逻辑
+            const troops = [];
+            const spells = [];
+            let maxHP = 0, maxDMG = 0;
+
+            // 按 (hp, damage) 分组，用于处理重叠偏移
+            const groups = {};
 
             rawData.forEach(item => {
-                const ref = item.ref_cards[0] || {};
-                const baseName = ref.name_zh || item.name;
-                let comment = ref.comment_zh || ref.comment_jp || ''; 
-                
-                if (comment === 'ボーイ') comment = '小哥';
-                if (comment === '炮台伤害' || comment === '炮台血量') comment = '炮台';
-                if (comment === '复仇哥布林') comment = '硬汉'; 
+                const hp = item.hp ?? 0;
+                const dmg = item.damage ?? 0;
+                const key = `${hp}_${dmg}`;
+                if (!groups[key]) groups[key] = [];
+                groups[key].push(item);
 
-                if (!baseName) return; 
-
-                let rawImg = ref.img || '';
-                let rootImg = rawImg ? rawImg.replace(/-ev\.png$/, '.png').replace(/-hero\.png$/, '.png') : '';
-
-                const uniqueKey = baseName + '_' + comment; 
-
-                if (!dataMap.has(uniqueKey)) {
-                    dataMap.set(uniqueKey, {
-                        id: uniqueKey,
-                        baseName: baseName, 
-                        comment: comment,
-                        img: rawImg,         
-                        rootImg: rootImg,    
-                        hp: 0,
-                        damage: 0,
-                        nativeHp: 0,      
-                        nativeDamage: 0,  
-                        ref: ref
-                    });
-                }
-                const obj = dataMap.get(uniqueKey);
-                
-                if (item.type === 'hp') {
-                    obj.hp = Math.max(obj.hp, item.value);
-                    obj.nativeHp = obj.hp;
-                }
-                if (item.type === 'damage') {
-                    obj.damage = Math.max(obj.damage, item.value);
-                    obj.nativeDamage = obj.damage;
-                }
+                if (hp < 9000 && hp > maxHP) maxHP = hp;
+                if (dmg < 9000 && dmg > maxDMG) maxDMG = dmg;
             });
 
-            dataMap.forEach(obj => {
-                if (obj.hp === 0 || obj.damage === 0) {
-                    const tryInherit = (peer) => {
-                        if (obj.hp === 0 && peer.hp > 0) obj.hp = peer.hp;
-                        if (obj.damage === 0 && peer.damage > 0) obj.damage = peer.damage;
-                    };
-                    const isSameFamily = (peer) => {
-                        if (obj.rootImg && peer.rootImg) return obj.rootImg === peer.rootImg;
-                        return obj.baseName === peer.baseName; 
-                    };
-
-                    if (obj.hp === 0 || obj.damage === 0) {
-                        dataMap.forEach(peer => {
-                            if (peer.baseName === obj.baseName && peer.comment !== '' && obj.comment !== '') {
-                                if (obj.comment.includes(peer.comment) || peer.comment.includes(obj.comment)) tryInherit(peer);
-                            }
-                        });
-                    }
-
-                    if (obj.hp === 0 || obj.damage === 0) {
-                        dataMap.forEach(peer => {
-                            if (peer.img === obj.rootImg && peer.comment === '') tryInherit(peer);
-                        });
-                    }
-
-                    if ((obj.hp === 0 || obj.damage === 0) && obj.comment !== '') {
-                        if (obj.hp === 0) {
-                            let maxHp = 0;
-                            dataMap.forEach(peer => { if (peer.baseName === obj.baseName && peer.hp > maxHp) maxHp = peer.hp; });
-                            obj.hp = maxHp;
-                        }
-                        if (obj.damage === 0) {
-                            let maxDmg = 0;
-                            dataMap.forEach(peer => { if (peer.baseName === obj.baseName && peer.damage > maxDmg) maxDmg = peer.damage; });
-                            obj.damage = maxDmg;
-                        }
-                    }
-                }
-            });
-
-            const keysToDelete = [];
-            dataMap.forEach((obj, key) => {
-                if (obj.comment === '') {
-                    let isRedundant = false;
-                    dataMap.forEach(peer => {
-                        if (peer.img === obj.img && peer.comment !== '' && peer !== obj) {
-                            if ((obj.nativeHp === 0 || obj.nativeDamage === 0) && peer.hp === obj.hp && peer.damage === obj.damage) {
-                                isRedundant = true; 
-                            }
-                        }
-                        if (obj.damage === 0 && obj.hp > 0 && peer.img === obj.img && peer.hp === obj.hp && peer.damage > 0) {
-                            isRedundant = true;
-                        }
-                    });
-                    if (isRedundant) keysToDelete.push(key);
-                }
-            });
-            keysToDelete.forEach(key => dataMap.delete(key));
-
-            const groupedPoints = {};
-            dataMap.forEach(obj => {
-                const key = `${obj.hp}_${obj.damage}`;
-                if (!groupedPoints[key]) {
-                    groupedPoints[key] = [];
-                }
-                groupedPoints[key].push(obj);
-            });
-
-            Object.values(groupedPoints).forEach(group => {
+            Object.values(groups).forEach(group => {
                 const pointCount = group.length;
-
-                group.forEach((obj, index) => {
-                    if (obj.hp < 9000 && obj.hp > parsedData.maxHP) parsedData.maxHP = obj.hp;
-                    if (obj.damage < 9000 && obj.damage > parsedData.maxDMG) parsedData.maxDMG = obj.damage;
-
-                    let iconFile = obj.img || '';
-                    if (iconFile) {
-                        iconFile = iconFile.replace(/(.+)-ev\.png$/, 'evolved-$1.png');
-                        iconFile = iconFile.replace(/(.+)-hero\.png$/, 'hero-$1.png');
-                    }
-
-                    let offsetX = 0;
-                    let offsetY = 0;
+                group.forEach((entity, index) => {
+                    let offsetX = 0, offsetY = 0;
                     if (pointCount === 2) {
                         offsetX = index === 0 ? -16 : 16;
                     } else if (pointCount > 2) {
-                        const radius = 12 + pointCount * 2.5; 
+                        const radius = 12 + pointCount * 2.5;
                         const angle = (index * 2 * Math.PI / pointCount) - (Math.PI / 2);
                         offsetX = Math.cos(angle) * radius;
                         offsetY = Math.sin(angle) * radius;
                     }
 
+                    // 处理图标路径（与原逻辑一致）
+                    let iconFile = entity.img || '';
+                    if (iconFile) {
+                        iconFile = iconFile.replace(/(.+)-ev\.png$/, 'evolved-$1.png');
+                        iconFile = iconFile.replace(/(.+)-hero\.png$/, 'hero-$1.png');
+                    }
+
                     const point = {
-                        name: obj.baseName,          
-                        comment: obj.comment,      
-                        value: [obj.hp, obj.damage],
+                        name: entity.display_name || entity.name,
+                        comment: entity.comment || '',
+                        value: [entity.hp, entity.damage],
                         img: iconFile,
                         symbol: iconFile ? `image://icon/${iconFile}` : 'circle',
-                        symbolSize: 26, 
+                        symbolSize: 26,
                         symbolOffset: [offsetX, offsetY]
                     };
 
-                    if (obj.hp > 0) {
-                        parsedData.troops.push(point);
+                    if (entity.hp > 0) {
+                        troops.push(point);
                     } else {
-                        parsedData.spells.push(point);
+                        spells.push(point);
                     }
                 });
             });
 
+            parsedData.troops = troops;
+            parsedData.spells = spells;
+            parsedData.maxHP = maxHP;
+            parsedData.maxDMG = maxDMG;
+
             myChart.hideLoading();
-            renderChartSmart1to1(); 
+            renderChartSmart1to1();
         })
         .catch(error => {
             console.error('获取 data.json 失败:', error);
@@ -397,27 +306,21 @@
 
     myChart.on('mouseover', function(params) {
         if (params.seriesType === 'scatter' && params.seriesId !== 'dynamic-highlight') {
-            const x = params.value[0]; // 当前悬停卡牌的 血量
-            const y = params.value[1]; // 当前悬停卡牌的 伤害值
+            const x = params.value[0];
+            const y = params.value[1];
             const highlightColor = params.seriesIndex === 0 ? '#0984e3' : '#e74c3c';
             const currentXAxisIndex = params.seriesIndex === 0 ? 0 : 1;
 
-            // ✨ 双向雷达 1：计算部队（哪些部队能抗住当前伤害？）
             const dynamicTroops = parsedData.troops.map(t => {
                 const isHoveredItem = (t.name === params.data.name && t.comment === params.data.comment);
-                // 逻辑：如果部队血量 > 悬停卡牌伤害（即杀不死），则变淡隐藏！
-                // 留下的高亮卡牌，都是能被当前伤害秒杀的脆皮。
                 if (!isHoveredItem && t.value[0] > y) {
                     return { ...t, itemStyle: { color: '#0984e3', opacity: 0.15 } };
                 }
                 return { ...t, itemStyle: { color: '#0984e3', opacity: 0.9 } };
             });
 
-            // ✨ 双向雷达 2：计算法术（哪些法术能秒杀当前部队？）
             const dynamicSpells = parsedData.spells.map(s => {
                 const isHoveredItem = (s.name === params.data.name && s.comment === params.data.comment);
-                // 逻辑：如果法术的伤害 < 悬停卡牌的血量（即法术杀不死它），法术变淡隐藏！
-                // 留在原位高亮的法术，都是能直接秒杀当前指向部队的法术。
                 if (!isHoveredItem && s.value[1] < x) {
                     return { ...s, itemStyle: { color: '#e74c3c', opacity: 0.15 } };
                 }
@@ -426,29 +329,21 @@
 
             myChart.setOption({
                 series: [
-                    {
-                        id: 'troops-series',
-                        data: dynamicTroops
-                    },
-                    {
-                        id: 'spells-series',
-                        data: dynamicSpells // 注入动态法术列
-                    },
+                    { id: 'troops-series', data: dynamicTroops },
+                    { id: 'spells-series', data: dynamicSpells },
                     {
                         id: 'dynamic-highlight',
                         xAxisIndex: currentXAxisIndex,
                         markArea: {
                             itemStyle: { color: highlightColor, opacity: 0.15 },
-                            data: [
-                                [ { coord: [0, 0] }, { coord: [x, y] } ]
-                            ]
+                            data: [[{ coord: [0, 0] }, { coord: [x, y] }]]
                         },
                         markLine: {
                             lineStyle: { color: highlightColor, width: 2, type: 'dashed' },
                             symbol: ['none', 'none'],
                             data: [
-                                [ { coord: [x, 0] }, { coord: [x, y] } ],
-                                [ { coord: [0, y] }, { coord: [x, y] } ]
+                                [{ coord: [x, 0] }, { coord: [x, y] }],
+                                [{ coord: [0, y] }, { coord: [x, y] }]
                             ]
                         }
                     }
@@ -457,24 +352,13 @@
         }
     });
 
-    // 移出时，部队和法术同时恢复全图高亮
     myChart.on('mouseout', function(params) {
         if (params.seriesType === 'scatter' && params.seriesId !== 'dynamic-highlight') {
             myChart.setOption({
                 series: [
-                    {
-                        id: 'troops-series',
-                        data: parsedData.troops
-                    },
-                    {
-                        id: 'spells-series',
-                        data: parsedData.spells // 恢复法术列
-                    },
-                    {
-                        id: 'dynamic-highlight',
-                        markArea: { data: [] },
-                        markLine: { data: [] }
-                    }
+                    { id: 'troops-series', data: parsedData.troops },
+                    { id: 'spells-series', data: parsedData.spells },
+                    { id: 'dynamic-highlight', markArea: { data: [] }, markLine: { data: [] } }
                 ]
             });
         }
